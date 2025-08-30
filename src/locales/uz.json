@@ -1,0 +1,60 @@
+{
+  "header": {
+    "emailLabel": "Email:",
+    "phoneLabel": "Hoziroq qo’ngiroq qiling:",
+    "phoneNumber": "+998 91 123-45-67",
+    "apply": "Apply Now!"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "cta": "Oltin imkoniyatni qo’ldan boy bermang",
+    "title": "Yaxshi {{highlight}} kuchi",
+    "highlight": "maslahatning",
+    "point1": "Dunyoni o’zgartirishni xohlovchilar uchun",
+    "point2": "Talaba buyuk maqsadlar bilan"
+  },
+  "education": {
+    "title": "Ta'limingizni keyingi bosqichga olib chiqish"
+  },
+  "services": {
+    "consulting": "Konsultatsiya"
+  },
+  "about": {
+    "sectionTitle": "BIZ HAQIMIZDA",
+    "title": "Tajribali",
+    "highlight": "Konsultantlar",
+    "desc1": "Chet elda o'qish va viza bo'yicha maslahat xizmatlarini ko'rsatuvchi eng nufuzli provayder.",
+    "desc2": "Bizning filiallarimiz Toshkent va Buxoroda.",
+    "stats": {
+      "admission": "Talabalarni qabul qilish",
+      "visa": "Talaba vizalari",
+      "grant": "Grant yutish",
+      "help": "Viza olishda yordam",
+      "housing": "Talabani turar joy bilan taminlash"
+    }
+  },
+  "stats": {
+    "universities": "Universetitlar",
+    "experience": "Bir necha yillik tajriba",
+    "happyClients": "Xursand mijozlar",
+    "partners": "Davlatlar universitetlari bilan aloqadamiz"
+  },
+  "process": {
+    "sectionTitle": "Jarayon",
+    "title1": "Bizni nima boshqalardan ajratib turadi",
+    "title2": "Chet elda o'qish bo'yicha konsultantlar",
+    "step1": "Bepul maslahat xizmati",
+    "step2": "Mamlakat va universitet tanlashda yordam",
+    "step3": "Tez va ishonchli hujjat topshirish jarayoni",
+    "step4": "Grant, viza va moliyaviy yordam olishda ko’rsatma"
+  },
+  "team": {
+    "sectionTitle": "BIZ HAQIMIZDA",
+    "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+  }
+}

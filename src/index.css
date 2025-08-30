@@ -12,6 +12,9 @@
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
+.font-inter {
+  font-family: "Inter", "sans-serif";
+}
 .color-sabzi {
   color: #f15c36;
 }
@@ -21,4 +24,8 @@
 }
 .color-gray {
   color: #323232;
+}
+.custom-stroke {
+  -webkit-text-stroke: 1px white; /* oq rang border */
+  font-family: Georgia, serif;
 }
