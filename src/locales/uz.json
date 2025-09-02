@@ -3,17 +3,20 @@
     "emailLabel": "Email:",
     "phoneLabel": "Hoziroq qo’ngiroq qiling:",
     "phoneNumber": "+998 91 123-45-67",
-    "apply": "Apply Now!"
+    "btn": "Apply Now!"
   },
   "nav": {
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
-    "services": "Xizmatlar",
-    "contact": "Aloqa"
+    "event": "Jarayon",
+    "colictive": "Jamoamiz",
+    "city": "Davlatlar"
   },
   "hero": {
     "cta": "Oltin imkoniyatni qo’ldan boy bermang",
-    "title": "Yaxshi {{highlight}} kuchi",
+    "title1": "Yaxshi ",
+    "title2": " maslahatning ",
+    "title3": "kuchi",
     "highlight": "maslahatning",
     "point1": "Dunyoni o’zgartirishni xohlovchilar uchun",
     "point2": "Talaba buyuk maqsadlar bilan"
@@ -22,7 +25,12 @@
     "title": "Ta'limingizni keyingi bosqichga olib chiqish"
   },
   "services": {
-    "consulting": "Konsultatsiya"
+    "service1": "Konsultatsiya",
+    "service2": "Hujjat yig’ish",
+    "service3": "Davlat tanlash",
+    "service4": "Universitet tanlash",
+    "service5": "Qabul xati olish",
+    "service6": "Viza olish"
   },
   "about": {
     "sectionTitle": "BIZ HAQIMIZDA",

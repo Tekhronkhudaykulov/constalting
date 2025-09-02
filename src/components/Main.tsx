@@ -31,14 +31,16 @@ export default function Main() {
           <div className="container mx-auto flex  justify-between">
             <div className="flex gap-15">
               <p className="flex items-center gap-1 font-georgia ">
-                <span className="text-[#f15c36] ">Email:</span>
+                <span className="text-[#f15c36] ">
+                  {t("header.emailLabel")}
+                </span>
                 info@rfconsultingsupport.com
               </p>
               <p className="flex items-center gap-1 font-georgia ">
                 <span className="text-[#f15c36] ">
-                  Hoziroq qo’ngiroq qiling:
+                  {t("header.phoneLabel")}
                 </span>
-                +998 91 123-45-67
+                {t("header.phoneNumber")}
               </p>
             </div>
             <div>
@@ -46,10 +48,9 @@ export default function Main() {
               <button onClick={() => i18n.changeLanguage("en")}>EN</button>
             </div>
             <button className="px-4 py-1.5 bg-[#f15c36] font-georgia rounded-full">
-              Apply Now!
+              {t("header.btn")}
             </button>
           </div>
-          
         </div>
 
         <div className=" h-[10vh] bg-white flex items-center">
@@ -58,12 +59,12 @@ export default function Main() {
             <div>
               <nav className="flex items-center gap-5">
                 <Link
-                  to="about" // Elementning name qiymati
+                  to="home" // Elementning name qiymati
                   smooth={true} // Smooth scrolling
                   duration={500} // Tezligi (ms)
                   className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
                 >
-                  Bosh sahifa
+                  {t("nav.home")}
                 </Link>
                 <Link
                   to="about" // Elementning name qiymati
@@ -71,23 +72,31 @@ export default function Main() {
                   duration={500} // Tezligi (ms)
                   className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
                 >
-                  Bosh sahifa
+                  {t("nav.about")}
                 </Link>
                 <Link
-                  to="about" // Elementning name qiymati
+                  to="event" // Elementning name qiymati
                   smooth={true} // Smooth scrolling
                   duration={500} // Tezligi (ms)
                   className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
                 >
-                  Bosh sahifa
+                  {t("nav.event")}
                 </Link>
                 <Link
-                  to="about" // Elementning name qiymati
+                  to="colictive" // Elementning name qiymati
                   smooth={true} // Smooth scrolling
                   duration={500} // Tezligi (ms)
                   className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
                 >
-                  Bosh sahifa
+                  {t("nav.colictive")}
+                </Link>
+                <Link
+                  to="city" // Elementning name qiymati
+                  smooth={true} // Smooth scrolling
+                  duration={500} // Tezligi (ms)
+                  className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                >
+                  {t("nav.city")}
                 </Link>
               </nav>
             </div>
@@ -98,24 +107,23 @@ export default function Main() {
           <div className="container mx-auto grid grid-cols-3 items-start justify-center relative">
             <div className=" col-span-2 absolute top-[300px]">
               <button className="border-white border-3 bg-[#243E6D] font-popins font-bold px-3 py-2 text-white text-[18px]">
-                Oltin imkoniyatni qo’ldan boy bermang
+                {t("hero.cta")}
               </button>
               <h1 className="text-[62px] font-bold font-playfair ">
-                Yaxshi <span className="text-[#f15c36]">maslahatning</span>{" "}
+                {t("hero.title1")}
+                <span className="text-[#f15c36]"> {t("hero.title2")}</span>
                 <br />
-                kuchi
+                {t("hero.title3")}
               </h1>
               <div className=" flex items-center gap-10">
                 <div className="flex items-center gap-3">
                   <span className="w-3 h-3 bg-[#f15c36] rounded-full"></span>
-                  <p className="text-[20px] font-medium ">
-                    Dunyoni o’zgartirishni xohlovchilar uchun
-                  </p>
+                  <p className="text-[20px] font-medium ">{t("hero.point1")}</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="w-3 h-3 bg-[#f15c36] rounded-full"></span>
                   <p className="text-[20px] font-medium ">
-                    Talaba buyuk maqsadlar bilan{" "}
+                    {t("hero.point2")}{" "}
                   </p>
                 </div>
               </div>
@@ -127,7 +135,7 @@ export default function Main() {
       <div className="bg-[#0B203B]">
         <div className="container mx-auto flex items-center justify-center px-15 pt-15 pb-20">
           <h1 className="text-white text-[48px] font-popins font-bold">
-            Ta'limingizni keyingi bosqichga olib chiqish
+            {t("education.title")}
           </h1>
         </div>
       </div>
@@ -136,37 +144,37 @@ export default function Main() {
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <HomeIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36] " />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service1")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <HujjatIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service2")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <DavlatIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service3")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <ExportIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service4")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <UniverIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service5")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
           <QabulIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
           <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
-            Konsultatsiya
+            {t("services.service6")}
           </h1>
         </div>
       </div>
@@ -174,7 +182,7 @@ export default function Main() {
       <div className="flex justify-between  container mx-auto  gap-7">
         <div className="w-[45%] ">
           <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
-            BIZ HAQIMIZDA
+            {t("about.sectionTitle")}
           </p>
           <h1 className="text-[50px] font-semibold font-popins text-[#003760] mt-8  ">
             Tajribali <br />
