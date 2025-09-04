@@ -29,3 +29,67 @@
   -webkit-text-stroke: 1px white; /* oq rang border */
   font-family: Georgia, serif;
 }
+
+/* Tezlikni oson boshqarish uchun o'zgaruvchi */
+:root {
+  --marquee-speed: 30s; /* qancha katta bo‘lsa, shuncha sekin */
+}
+
+/* Tashqi konteyner */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  background: transparent; /* xohlasang fon berishing mumkin */
+  /* pastdagi shadow agar xohlasang */
+  /* box-shadow: 0 8px 24px rgba(0,0,0,0.06) inset; */
+}
+
+/* Ichki trek: flex row + continuous animatsiya */
+.marquee__track {
+  display: flex;
+  align-items: center;
+  gap: 48px; /* rasmlar orasidagi masofa */
+  width: max-content;
+  animation: marquee-scroll var(--marquee-speed) linear infinite;
+}
+
+/* Rasm uslublari: bir xil balandlik va no-drag */
+.marquee__track img {
+  height: 56px; /* logolar balandligi (o'zgartirishingiz mumkin) */
+  width: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: grayscale(0); /* xohlasang 100% qilib kulrang qilasan */
+  -webkit-user-drag: none;
+  user-select: none;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.marquee__track img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Uzluksiz skroll uchun translateX */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Kontent ikki marta takrorlangani uchun -50% yetarli */
+    transform: translateX(-50%);
+  }
+}
+
+/* Hover qilinganda to‘xtatish (xohlasang olib tashla) */
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+/* Accessibility: foydalanuvchida "reduced motion" bo‘lsa animatsiyani o‘chir */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
+}

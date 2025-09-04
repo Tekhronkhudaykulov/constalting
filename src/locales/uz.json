@@ -50,7 +50,8 @@
     "universities": "Universetitlar",
     "experience": "Bir necha yillik tajriba",
     "happyClients": "Xursand mijozlar",
-    "partners": "Davlatlar universitetlari bilan aloqadamiz"
+    "partners1": "Davlatlar universitetlari ",
+    "partners2": "bilan aloqadamiz"
   },
   "process": {
     "sectionTitle": "Jarayon",
@@ -63,6 +64,49 @@
   },
   "team": {
     "sectionTitle": "BIZ HAQIMIZDA",
-    "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    "card1": {
+      "name": "Asadov Sherzod",
+      "job": "Direktor",
+      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card2": {
+      "name": "Salomov Adiz",
+      "job": "Yordamchi raxbar",
+      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card3": {
+      "name": "Shahzoda ",
+      "job": "Konsultant",
+      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card4": {
+      "name": "Lola",
+      "job": "Zam direktor",
+      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    }
+  },
+  "citys": {
+    "sectionTitle": "Davlatlar",
+    "title1": "Ommabop mamlakatlar",
+    "title2": "Xalqaro ta'lim uchun",
+    "desc": "Bizning ekspert jamoamiz intiluvchan talabalar uchun chet elda o'qish bo'yicha maslahat beradi. Chet elda ta'lim bo'yicha sertifikatlangan maslahatchilarimiz immigratsiya xizmatining ishonchli mutaxassislari sizga ijobiy natija olishingizga yordam beradi sizning ishingiz bo'yicha qaror. Biz butun dunyo bo'ylab chet elda o'qish va immigratsiya xizmatlarini taqdim etamiz.",
+    "card1": {
+      "title": "AQSH",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  },
+  "partners": {
+    "sectionTitle": "Biznig hamkorlarimiz"
+  },
+  "form": {
+    "sectionTitle1": "So'rov ",
+    "sectionTitle2": "yuboring",
+    "fullName": "Ism, familiyangiz",
+    "city": "Shahar",
+    "phoneNumber": "Telefon raqamingiz",
+    "theme": "Mavzuni yozing",
+    "textArea": "Xabar matni",
+    "btn": "Jo’natish"
   }
 }

@@ -79,8 +79,8 @@ export const ExportIcon: React.FC<IconProps> = ({ className }) => {
 export const UniverIcon: React.FC<IconProps> = ({ className }) => {
   return (
     <svg
-      width="50"
-      height="50"
+      width="0"
+      height="0"
       viewBox="0 0 50 50"
       fill="currentColor"
       className={className}

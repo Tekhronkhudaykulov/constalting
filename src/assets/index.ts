@@ -12,6 +12,18 @@ import colective1 from "./colective1.png";
 import colective2 from "./colective2.png";
 import colective3 from "./colective3.jpg";
 import colective4 from "./colective4.png";
+import davlat1 from "./davlat1.png";
+import davlat2 from "./davlat2.png";
+import davlat3 from "./davlat3.png";
+import davlat4 from "./davlat4.png";
+import davlat5 from "./davlat5.png";
+import davlat6 from "./davlat6.png";
+import partner1 from "./c225811a44cb871abcea8295ca0d869be7a7b1cb.png";
+import partner2 from "./b9194f817150ec9942adb29788362356ebf3d067.png";
+import partner3 from "./b1393c3aaf765ba644175171c63f2af1fb01d331.png";
+import partner4 from "./b7c024b5da45818cfef5732cb2cd67948efcb667.png";
+import partner5 from "./1829b91aa5bf88fca2dc1cafab72db590e295669.png";
+import formPng from "./faa75b264babd493d6483b9d4e9fd4b5bb5b5d55.png";
 
 export {
   About1,
@@ -28,95 +40,16 @@ export {
   colective2,
   colective3,
   colective4,
+  davlat1,
+  davlat2,
+  davlat3,
+  davlat4,
+  davlat5,
+  davlat6,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
+  formPng,
 };
-//  <div className="grid grid-cols-4 gap-8 mt-10">
-//           {/* card1 */}
-//           <div className="flex items-start justify-center flex-col rounded-xl overflow-hidden shadow-2xl ">
-//             <div>
-//               <img src={colective1} alt="" />
-//             </div>
-//             <div className="p-4 pb-6">
-//               <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
-//                 Asdov Sherzod
-//               </h1>
-//               <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
-//                 Direktor
-//               </p>
-//               <p className="font-inter font-normal text-[16px] text-[#6B7280]">
-//                 Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-//                 vulputate libero et velit interdum, ac aliquet odio mattis.
-//               </p>
-//               <div className="flex items-start justify-start gap-5 mt-4">
-//                 <FaFacebookF size={22} className="text-[#6B7280]" />
-//                 <FaTwitter size={22} className="text-[#6B7280]" />
-//                 <FaGithub size={22} className="text-[#6B7280]" />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="flex items-start justify-center flex-col rounded-xl overflow-hidden shadow-2xl ">
-//             <div>
-//               <img src={colective1} alt="" />
-//             </div>
-//             <div className="p-4 pb-6">
-//               <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
-//                 Asdov Sherzod
-//               </h1>
-//               <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
-//                 Direktor
-//               </p>
-//               <p className="font-inter font-normal text-[16px] text-[#6B7280]">
-//                 Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-//                 vulputate libero et velit interdum, ac aliquet odio mattis.
-//               </p>
-//               <div className="flex items-start justify-start gap-5 mt-4">
-//                 <FaFacebookF size={22} className="text-[#6B7280]" />
-//                 <FaTwitter size={22} className="text-[#6B7280]" />
-//                 <FaGithub size={22} className="text-[#6B7280]" />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="flex items-start justify-center flex-col rounded-xl overflow-hidden shadow-2xl ">
-//             <div>
-//               <img src={colective1} alt="" />
-//             </div>
-//             <div className="p-4 pb-6">
-//               <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
-//                 Asdov Sherzod
-//               </h1>
-//               <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
-//                 Direktor
-//               </p>
-//               <p className="font-inter font-normal text-[16px] text-[#6B7280]">
-//                 Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-//                 vulputate libero et velit interdum, ac aliquet odio mattis.
-//               </p>
-//               <div className="flex items-start justify-start gap-5 mt-4">
-//                 <FaFacebookF size={22} className="text-[#6B7280]" />
-//                 <FaTwitter size={22} className="text-[#6B7280]" />
-//                 <FaGithub size={22} className="text-[#6B7280]" />
-//               </div>
-//             </div>
-//           </div>
-//           <div className="flex items-start justify-center flex-col rounded-xl overflow-hidden shadow-2xl ">
-//             <div>
-//               <img src={colective1} alt="" />
-//             </div>
-//             <div className="p-4 pb-6">
-//               <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
-//                 Asdov Sherzod
-//               </h1>
-//               <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
-//                 Direktor
-//               </p>
-//               <p className="font-inter font-normal text-[16px] text-[#6B7280]">
-//                 Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-//                 vulputate libero et velit interdum, ac aliquet odio mattis.
-//               </p>
-//               <div className="flex items-start justify-start gap-5 mt-4">
-//                 <FaFacebookF size={22} className="text-[#6B7280]" />
-//                 <FaTwitter size={22} className="text-[#6B7280]" />
-//                 <FaGithub size={22} className="text-[#6B7280]" />
-//               </div>
-//             </div>
-//           </div>
-//         </div>

@@ -10,21 +10,42 @@ import {
 import {
   About1,
   About2,
+  colective1,
+  colective2,
+  colective3,
+  colective4,
+  davlat1,
+  davlat2,
+  davlat3,
+  davlat4,
+  davlat5,
+  davlat6,
+  formPng,
   jarayon1,
   jarayon2,
   jarayon3,
   jarayon4,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
   Vector,
   Vector1,
   Vector2,
 } from "../assets";
+import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 import { Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 export default function Main() {
   const { t, i18n } = useTranslation();
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* main page */}
       <div className="w-full h-screen  text-white">
         <div className="h-[5vh] bg-[#0b203b] flex flex-col  justify-center py-4  items-center text-white">
@@ -59,7 +80,7 @@ export default function Main() {
             <div>
               <nav className="flex items-center gap-5">
                 <Link
-                  to="home" // Elementning name qiymati
+                  to="home"
                   smooth={true} // Smooth scrolling
                   duration={500} // Tezligi (ms)
                   className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
@@ -140,40 +161,40 @@ export default function Main() {
         </div>
       </div>
       {/* cards 6 */}
-      <div className="  grid grid-cols-[repeat(6,300px)] justify-center items-center gap-7  -translate-y-13  w-full">
+      <div className="  grid lg:grid-cols-[repeat(6,300px)] md:grid-cols-[repeat(3,250px)]  justify-center items-center gap-7  -translate-y-13  w-full">
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <HomeIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36] " />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <HomeIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] " />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service1")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <HujjatIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <HujjatIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36]" />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service2")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <DavlatIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <DavlatIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36]" />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service3")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <ExportIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <ExportIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36]" />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service4")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <UniverIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <UniverIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36]" />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service5")}
           </h1>
         </div>
         <div className="flex flex-col p-7 items-center justify-center bg-[#F0F5FB] transition-all group hover:bg-[#f15c36]">
-          <QabulIcon className="w-[80px] h-[80px] group-hover:text-white text-[#f15c36]" />
-          <h1 className="text-[25px] font-bold font-georgia group-hover:text-white text-[#323232] ">
+          <QabulIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36]" />
+          <h1 className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232] ">
             {t("services.service6")}
           </h1>
         </div>
@@ -185,22 +206,21 @@ export default function Main() {
             {t("about.sectionTitle")}
           </p>
           <h1 className="text-[50px] font-semibold font-popins text-[#003760] mt-8  ">
-            Tajribali <br />
-            <span className="text-[#F15C36]">Konsultantlar</span>
+            {t("about.title")} <br />
+            <span className="text-[#F15C36]"> {t("about.highlight")}</span>
           </h1>
           <p className="text-[17px] text-[#7A8A9E] font-popins">
-            Chet elda o'qish va viza bo'yicha maslahat xizmatlarini ko'rsatuvchi
-            eng nufuzli provayder.
+            {t("about.desc1")}
           </p>
           <p className="text-[17px] text-[#7A8A9E] font-popins">
-            Bizning filiallarimiz Toshkent va Buxoroda.
+            {t("about.desc2")}
           </p>
 
           <div className="mt-5 space-y-8  w-full">
             <div className="bg-[#F0F5FB] rounded w-full">
               <div className="flex items-center  pl-3 justify-between w-[98%] py-1.5 ">
                 <p className="text-[16px] text-[#323232]">
-                  Talabalarni qabul qilish
+                  {t("about.stats.admission")}
                 </p>
                 <p className="text-[16px] text-[#323232]">95% </p>
               </div>
@@ -208,14 +228,20 @@ export default function Main() {
             </div>
             <div className="bg-[#F0F5FB] rounded w-full">
               <div className="flex items-center  pl-3 justify-between w-[97%] py-1.5 ">
-                <p className="text-[16px] text-[#323232]">Talaba vizalari</p>
+                <p className="text-[16px] text-[#323232]">
+                  {" "}
+                  {t("about.stats.visa")}
+                </p>
                 <p className="text-[16px] text-[#323232]">97% </p>
               </div>
               <div className="border-b-5 border-[#083D59]  w-[97%] mt-1 translate-y-3"></div>
             </div>
             <div className="bg-[#F0F5FB] rounded w-full">
               <div className="flex items-center  pl-3 justify-between w-[65%] py-1.5 ">
-                <p className="text-[16px] text-[#323232]">Grant yutish</p>
+                <p className="text-[16px] text-[#323232]">
+                  {" "}
+                  {t("about.stats.grant")}{" "}
+                </p>
                 <p className="text-[16px] text-[#323232]">65% </p>
               </div>
               <div className="border-b-5 border-[#083D59]  w-[65%] mt-1 translate-y-3"></div>
@@ -223,7 +249,7 @@ export default function Main() {
             <div className="bg-[#F0F5FB] rounded w-full">
               <div className="flex items-center  pl-3 justify-between w-[95%] py-1.5 ">
                 <p className="text-[16px] text-[#323232]">
-                  Viza olishda yordam
+                  {t("about.stats.help")}
                 </p>
                 <p className="text-[16px] text-[#323232]">95% </p>
               </div>
@@ -232,7 +258,7 @@ export default function Main() {
             <div className="bg-[#F0F5FB] rounded w-full">
               <div className="flex items-center  pl-3 justify-between w-[95%] py-1.5 ">
                 <p className="text-[16px] text-[#323232]">
-                  Talabani turar joy bilan taminlash
+                  {t("about.stats.housing")}
                 </p>
                 <p className="text-[16px] text-[#323232]">74% </p>
               </div>
@@ -262,7 +288,7 @@ export default function Main() {
               </h1>{" "}
             </span>
             <h1 className="text-[18px] text-white font-georgia">
-              Universetitlar
+              {t("stats.universities")}
             </h1>
           </div>
           <div className="flex flex-col gap- items-start justify-center">
@@ -273,7 +299,7 @@ export default function Main() {
               </h1>{" "}
             </span>
             <h1 className="text-[18px] text-white font-georgia">
-              Bir necha yillik tajriba
+              {t("stats.experience")}
             </h1>
           </div>
           <div className="flex flex-col gap- items-start justify-center">
@@ -284,7 +310,7 @@ export default function Main() {
               </h1>{" "}
             </span>
             <h1 className="text-[18px] text-white font-georgia">
-              Xursand mijozlar
+              {t("stats.happyClients")}
             </h1>
           </div>
           <div className="flex flex-col gap- items-start justify-center">
@@ -295,7 +321,8 @@ export default function Main() {
               </h1>{" "}
             </span>
             <h1 className="text-[18px] text-white font-georgia">
-              Davlatlar universitetlari <br /> bilan aloqadamiz
+              {t("stats.partners1")} <br />
+              {t("stats.partners2")}
             </h1>
           </div>
         </div>
@@ -305,13 +332,13 @@ export default function Main() {
            */}
       <div className="container mx-auto flex flex-col items-center justify-center my-15">
         <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
-          Jarayon
+          {t("process.sectionTitle")}
         </p>
         <h1 className="text-[45px] font-popins text-[#003760] font-semibold mt-4">
-          Bizni nima boshqalardan ajratib turadi
+          {t("process.title1")}
         </h1>
         <h1 className="text-[45px] font-playfair text-[#F15C36] font-semibold italic ">
-          Chet elda o'qish bo'yicha konsultantlar
+          {t("process.title2")}
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-25 mt-5">
           <div className="flex flex-col items-center justify-center gap-5">
@@ -330,7 +357,7 @@ export default function Main() {
             </div>
 
             <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A]">
-              Bepul maslahat xizmati
+              {t("process.step1")}
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">
@@ -348,8 +375,8 @@ export default function Main() {
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A]">
-              Mamlakat va universitet tanlashda yordam
+            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+              {t("process.step2")}
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">
@@ -367,8 +394,8 @@ export default function Main() {
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A]">
-              Tez va ishonchli hujjat topshirish jarayoni
+            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+              {t("process.step3")}
             </h1>
           </div>
           <div className="flex flex-col items-center justify-center gap-5">
@@ -386,8 +413,8 @@ export default function Main() {
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A]">
-              Grant, viza va moliyaviy yordam olishda ko’rsatma
+            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+              {t("process.step4")}
             </h1>
           </div>
         </div>
@@ -395,13 +422,429 @@ export default function Main() {
       {/* Bizning jamoamiz */}
       <div className="container mx-auto flex items-center justify-center flex-col mb-20 ">
         <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
-          BIZ HAQIMIZDA
+          {t("team.sectionTitle")}
         </p>
-        <p className="text-[20px] text-[#7A8A9E] font-inter   ">
-          Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+        <p className="text-[20px] text-[#7A8A9E] font-inter  mt-6 ">
+          {t("team.desc")}
         </p>
+        <div className="container mx-auto mt-10 ">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={2}
+            slidesPerView={4}
+            autoplay={{ delay: 2000 }}
+            loop={true}
+            className="mySwiper  "
+          >
+            {/* card1 */}
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective1}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card1.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card1.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card1.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective2}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card2.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card2.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card2.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective3}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card3.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card3.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card3.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective4}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card4.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card4.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card4.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective1}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card1.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card1.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card1.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3 ">
+                <div className="flex flex-col ">
+                  <img
+                    src={colective1}
+                    alt=""
+                    className="w-full max-h-[210px] h-full"
+                  />
+                  <div className="p-4 pb-6">
+                    <h1 className="text-[18px] font-bold text-[#233876] font-inter mt-2">
+                      {t("team.card1.name")}
+                    </h1>
+                    <p className="font-medium font-inter text-[16px] text-[#6B7280] mb-2">
+                      {t("team.card1.job")}
+                    </p>
+                    <p className="font-inter font-normal text-[16px] text-[#6B7280]">
+                      {t("team.card1.desc")}
+                    </p>
+                    <div className="flex gap-5 mt-4">
+                      <FaFacebookF size={22} className="text-[#6B7280]" />
+                      <FaTwitter size={22} className="text-[#6B7280]" />
+                      <FaGithub size={22} className="text-[#6B7280]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-    </>
+
+      {/* davlatlar */}
+      <div className="container mx-auto flex flex-col items-center justify-center mb-20 ">
+        <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
+          {t("citys.sectionTitle")}
+        </p>
+        <h1 className="text-[45px] font-popins text-[#003760] font-semibold mt-4">
+          {t("citys.title1")}
+        </h1>
+        <h1 className="text-[45px] font-playfair text-[#F15C36] font-semibold italic ">
+          {t("citys.title2")}
+        </h1>
+        <p className="text-[16px] text-[#7A8A9E] font-roboto  mt-6 text-center ">
+          {t("citys.desc")}
+        </p>
+        <div className="grid grid-cols-[repeat(3,450px)] gap-10 mt-8 ">
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat1}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat2}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat3}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat4}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat5}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+          <div className="relative group rounded-lg overflow-hidden shadow-2xl">
+            {/* Rasm */}
+            <img
+              src={davlat6}
+              alt="team"
+              className="w-full h-[315px] object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Overlay + text */}
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h1 className="text-white font-popins text-[30px]  font-bold">
+                {t("citys.card1.title")}
+              </h1>
+              <p className="text-white   text-left px-7 text-[15px]/8 font-roboto">
+                {t("citys.card1.desc")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* partners */}
+      <div className="container mx-auto flex flex-col items-center justify-center mb-20  py-5">
+        <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
+          {t("citys.sectionTitle")}
+        </p>
+        <div className="marquee mt-13">
+          <div className="marquee__track">
+            <img
+              src={partner1}
+              alt="Partner 1"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner2}
+              alt="Partner 2"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner3}
+              alt="Partner 3"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner4}
+              alt="Partner 4"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner5}
+              alt="Partner 5"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner1}
+              alt="Partner 1"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner2}
+              alt="Partner 2"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner3}
+              alt="Partner 3"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner4}
+              alt="Partner 4"
+              className="w-[260px] h-[75px] object-cover"
+            />
+            <img
+              src={partner5}
+              alt="Partner 5"
+              className="w-[260px] h-[75px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+      {/* form data */}
+      <div className="w-full py-15 bg-[#F0F5FB]">
+        <div className="container mx-auto flex items-center justifg-red-500 gap-10 px-5 ">
+          {/* Form qismi */}
+          <div className="w-[50%] flex flex-col">
+            <h1 className="font-popins font-semibold text-[42px] text-[#003760]">
+              <span className="text-[#F15C36]">{t("form.sectionTitle1")}</span>{" "}
+              {t("form.sectionTitle2")}
+            </h1>
+
+            <form className="grid grid-cols-2 gap-4 mt-4">
+              <input
+                type="text"
+                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                placeholder={t("form.fullName")}
+              />
+              <input
+                type="text"
+                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                placeholder={t("form.city")}
+              />
+              <input
+                type="text"
+                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                placeholder={t("form.phoneNumber")}
+              />
+              <input
+                type="text"
+                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                placeholder={t("form.theme")}
+              />
+              <textarea
+                rows={4}
+                className="bg-white font-roboto text-[15px] text-[#7A8A9E] border-[#CED7E4] rounded-[5px] border-2 p-4 outline-none col-span-2"
+                placeholder={t("form.textArea")}
+              />
+            </form>
+
+            <button className="mt-4 bg-[#F15C36] text-white py-3 px-6 w-max rounded-md font-medium">
+              {t("form.btn")}
+            </button>
+          </div>
+
+          {/* Rasm qismi */}
+          <div className="flex-1 flex items-center justify-center">
+            <img
+              src={formPng}
+              alt="Form image"
+              className="max-h-[500px] w-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-60">s</div>
+    </div>
   );
 }
+// grid-cols-[repeat(6,300px)]
+// So'rov yuboring
