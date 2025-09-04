@@ -24,7 +24,8 @@ import partner3 from "./b1393c3aaf765ba644175171c63f2af1fb01d331.png";
 import partner4 from "./b7c024b5da45818cfef5732cb2cd67948efcb667.png";
 import partner5 from "./1829b91aa5bf88fca2dc1cafab72db590e295669.png";
 import formPng from "./faa75b264babd493d6483b9d4e9fd4b5bb5b5d55.png";
-
+import footerBg from "./footerBg.png";
+import herooBg from "./heroBg.png";
 export {
   About1,
   About2,
@@ -52,4 +53,6 @@ export {
   partner4,
   partner5,
   formPng,
+  footerBg,
+  herooBg,
 };
