@@ -164,6 +164,9 @@
     width: 120px;
     height: 120px;
   }
+  .team_block {
+    display: block;
+  }
   .team_card {
     height: 190px;
   }
@@ -174,7 +177,7 @@
     font-size: 14px;
   }
   .team_job {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
@@ -219,4 +222,18 @@
   .proces_title {
     font-size: 25px;
   }
+  .team_hidden_sm {
+    display: none;
+  }
+
+  .team_img_card_sm {
+    height: 100px;
+  }
+  .team_name_sm {
+    font-size: 10px;
+    color: red;
+  }
+}
+.team_job {
+  font-size: 13px;
 }

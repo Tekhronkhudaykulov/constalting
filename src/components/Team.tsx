@@ -48,8 +48,7 @@ export default function Team() {
       desc: t("team.card1.desc"),
     },
   ];
-  const firstHalf = teamMembers.slice(0, 2);
-  const secondHalf = teamMembers.slice(2);
+
   return (
     <div>
       <div className="container mx-auto flex items-center justify-center flex-col mb-20 px-10 ">
@@ -59,7 +58,7 @@ export default function Team() {
         <p className="text-[20px] text-[#7A8A9E] font-inter  mt-6 ">
           {t("team.desc")}
         </p>
-        <div className="container mx-auto mt-3 ">
+        <div className=" team_hidden_sm team_block container mx-auto mt-3 ">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={2}
@@ -72,7 +71,54 @@ export default function Team() {
               <SwiperSlide key={index}>
                 <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3  ">
                   <div className="flex flex-col  ">
-                    <div className="w-full h-[225px] team_img_card bg-red-500">
+                    <div className="w-full h-[225px] team_img_card team_img_card_sm bg-red-500">
+                      <img
+                        src={member.img}
+                        alt=""
+                        className="w-full h-full object-cover "
+                      />
+                    </div>
+                    <div className="p-4  team_card team_card_text_sm flex flex-col justify-between">
+                      <div>
+                        <h1 className="team_name_sm text-[18px]  team_name  font-bold text-[#233876] font-inter ">
+                          {member.name}
+                        </h1>
+                        <p className="font-medium font-inter text-[16px]  team_job text-[#6B7280] mb-2">
+                          {member.job}
+                        </p>
+                      </div>
+                      <div>
+                        <p className="font-inter font-normal text-[16px]  text-[#6B7280] line-clamp-3">
+                          {member.desc}
+                        </p>
+                        <div className="flex gap-5 mt-4">
+                          <FaFacebookF size={22} className="text-[#6B7280]" />
+                          <FaTwitter size={22} className="text-[#6B7280]" />
+                          <FaGithub size={22} className="text-[#6B7280]" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="  container mx-auto mt-3 ">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={2}
+            slidesPerView={2}
+            autoplay={{ delay: 2000 }}
+            loop={true}
+            className="mySwiper  "
+          >
+            {teamMembers.map((member, index) => (
+              <SwiperSlide key={index}>
+                <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3  ">
+                  <div className="flex flex-col  ">
+                    <div className="w-full h-[225px] team_img_card team_img_card_sm bg-red-500">
                       <img
                         src={member.img}
                         alt=""
@@ -84,12 +130,12 @@ export default function Team() {
                         <h1 className="text-[18px]  team_name font-bold text-[#233876] font-inter ">
                           {member.name}
                         </h1>
-                        <p className="font-medium font-inter text-[16px]  text-[#6B7280] mb-2">
+                        <p className="font-medium font-inter text-[16px]  team_job text-[#6B7280] mb-2">
                           {member.job}
                         </p>
                       </div>
                       <div>
-                        <p className="font-inter font-normal text-[16px] team_job text-[#6B7280] line-clamp-3">
+                        <p className="font-inter font-normal text-[16px]  text-[#6B7280] line-clamp-3">
                           {member.desc}
                         </p>
                         <div className="flex gap-5 mt-4">
