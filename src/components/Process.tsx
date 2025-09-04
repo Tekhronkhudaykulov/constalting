@@ -5,91 +5,91 @@ export default function Process() {
   const { t } = useTranslation();
   return (
     <div>
-      {" "}
-      <div className="container mx-auto flex flex-col items-center justify-center my-15">
-        <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
+      <div className="container mx-auto px-10 flex flex-col items-center justify-center my-15">
+        <p className="text-[16px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
           {t("process.sectionTitle")}
         </p>
-        <h1 className="text-[45px] font-popins text-[#003760] font-semibold mt-4">
+        <h1 className="text-[40px] proces_title font-popins text-[#003760] font-semibold mt-4">
           {t("process.title1")}
         </h1>
-        <h1 className="text-[45px] font-playfair text-[#F15C36] font-semibold italic ">
+        <h1 className="text-[40px]  proces_title font-playfair text-[#F15C36] font-semibold italic ">
           {t("process.title2")}
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-25 mt-5">
-          <div className="flex flex-col items-center justify-center gap-5">
-            <div className="w-[250px] h-[250px] flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
+        <div className="grid grid-cols-2 md:grid-cols-4  gap-3  mt-6 ">
+          <div className="flex flex-col  items-start justify-start gap-4 proces_cards proces_cards_sm">
+            <div className="w-[250px] h-[250px]  proces_card flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
               <img
                 src={jarayon1}
                 alt=""
-                className="w-[210px] h-[210px] object-center"
+                className="w-[210px] h-[210px] proces_img object-center"
               />
-
-              <div className="absolute w-[210px] h-[210px] bg-black/40 rounded-full flex items-end justify-center">
+              <div className="absolute w-[210px] h-[210px] proces_card_bg bg-black/40 rounded-full flex items-end justify-center">
                 <p className="text-[48px] font-bold text-transparent custom-stroke border-white">
                   01
                 </p>
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A]">
+            <h1 className=" text-[17px] text-center font-bold font-georgia text-[#1A1A1A]">
               {t("process.step1")}
             </h1>
           </div>
-          <div className="flex flex-col items-center justify-center gap-5">
-            <div className="w-[250px] h-[250px] flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
+          {/*  */}
+          <div className="flex flex-col items-start justify-start gap-4 proces_cards proces_cards_sm">
+            <div className="w-[250px] h-[250px]  proces_card flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
               <img
                 src={jarayon2}
                 alt=""
-                className="w-[210px] h-[210px] object-center"
+                className="w-[210px] h-[210px] proces_img object-center"
               />
 
-              <div className="absolute w-[210px] h-[210px] bg-black/40 rounded-full flex items-end justify-center">
+              <div className="absolute w-[210px] h-[210px] proces_card_bg bg-black/40 rounded-full flex items-end justify-center">
                 <p className="text-[48px] font-bold text-transparent custom-stroke border-white">
                   02
                 </p>
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+            <h1 className=" text-[17px] font-bold font-georgia text-[#1A1A1A] text-center">
               {t("process.step2")}
             </h1>
           </div>
-          <div className="flex flex-col items-center justify-center gap-5">
-            <div className="w-[250px] h-[250px] flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
+          <div className="flex flex-col items-start justify-start gap-4 proces_cards proces_cards_sm">
+            <div className="w-[250px] h-[250px]  proces_card flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
               <img
                 src={jarayon3}
                 alt=""
-                className="w-[210px] h-[210px] object-center"
+                className="w-[210px] h-[210px] proces_img object-center"
               />
 
-              <div className="absolute w-[210px] h-[210px] bg-black/40 rounded-full flex items-end justify-center">
+              <div className="absolute w-[210px] h-[210px] proces_card_bg bg-black/40 rounded-full flex items-end justify-center">
                 <p className="text-[48px] font-bold text-transparent custom-stroke border-white">
                   03
                 </p>
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+            <h1 className=" text-[17px] text-center font-bold font-georgia text-[#1A1A1A] ">
               {t("process.step3")}
             </h1>
           </div>
-          <div className="flex flex-col items-center justify-center gap-5">
-            <div className="w-[250px] h-[250px] flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
+
+          <div className="flex flex-col items-start justify-start gap-4 proces_cards proces_cards_sm">
+            <div className="w-[250px] h-[250px] proces_card flex items-center justify-center rounded-full overflow-hidden border-[#F15C36] border-2 relative">
               <img
                 src={jarayon4}
                 alt=""
-                className="w-[210px] h-[210px] object-center"
+                className="w-[210px] h-[210px] proces_img object-center"
               />
 
-              <div className="absolute w-[210px] h-[210px] bg-black/40 rounded-full flex items-end justify-center">
+              <div className="absolute w-[210px] h-[210px] proces_card_bg bg-black/40 rounded-full flex items-end justify-center">
                 <p className="text-[48px] font-bold text-transparent custom-stroke border-white">
                   04
                 </p>
               </div>
             </div>
 
-            <h1 className=" text-[20px] font-bold font-georgia text-[#1A1A1A] text-center">
+            <h1 className=" text-[17px] font-bold font-georgia text-[#1A1A1A] text-center">
               {t("process.step4")}
             </h1>
           </div>

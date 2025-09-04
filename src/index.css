@@ -148,6 +148,34 @@
   .stats_disc {
     font-size: 14px;
   }
+
+  .proces_cards {
+    height: 310px;
+  }
+  .proces_card {
+    width: 150px;
+    height: 150px;
+  }
+  .proces_card_bg {
+    width: 120px;
+    height: 120px;
+  }
+  .proces_img {
+    width: 120px;
+    height: 120px;
+  }
+  .team_card {
+    height: 190px;
+  }
+  .team_img_card {
+    height: 180px;
+  }
+  .team_name {
+    font-size: 14px;
+  }
+  .team_job {
+    font-size: 10px;
+  }
 }
 
 /* Telefon (max 480px) */
@@ -182,8 +210,13 @@
   .servic_card_sm {
     height: 110px;
     display: flex;
-    align-items: ;
     justify-content: center;
     text-align: center;
+  }
+  .proces_cards_sm {
+    height: 250px;
+  }
+  .proces_title {
+    font-size: 25px;
   }
 }
