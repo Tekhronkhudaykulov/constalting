@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function Partners() {
   const { t } = useTranslation();
   return (
-    <div>
+    <section id="partners">
       {" "}
       <div className="container mx-auto flex flex-col items-center justify-center mb-20  py-5">
         <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
@@ -65,6 +65,6 @@ export default function Partners() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

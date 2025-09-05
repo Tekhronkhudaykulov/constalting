@@ -3,7 +3,9 @@ import { colective1, colective2, colective3, colective4 } from "../assets";
 import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+// @ts-ignore
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/autoplay";
 
 export default function Team() {
@@ -50,108 +52,131 @@ export default function Team() {
   ];
 
   return (
-    <div>
-      <div className="container mx-auto flex items-center justify-center flex-col mb-20 px-10 ">
-        <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max ">
+    <section id="colictive">
+      <div
+        className="container mx-auto flex items-center justify-center flex-col mb-20 px-10"
+        data-aos="fade-up"
+      >
+        <p
+          className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
+          data-aos="fade-down"
+        >
           {t("team.sectionTitle")}
         </p>
-        <p className="text-[20px] text-[#7A8A9E] font-inter  mt-6 ">
+        <p
+          className="text-[16px] text-center text-[#7A8A9E] font-inter mt-6"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           {t("team.desc")}
         </p>
-        <div className=" team_hidden_sm team_block container mx-auto mt-3 ">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={2}
-            slidesPerView={4}
-            autoplay={{ delay: 2000 }}
-            loop={true}
-            className="mySwiper  "
-          >
-            {teamMembers.map((member, index) => (
-              <SwiperSlide key={index}>
-                <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3  ">
-                  <div className="flex flex-col  ">
-                    <div className="w-full h-[225px] team_img_card team_img_card_sm bg-red-500">
-                      <img
-                        src={member.img}
-                        alt=""
-                        className="w-full h-full object-cover "
-                      />
-                    </div>
-                    <div className="p-4  team_card team_card_text_sm flex flex-col justify-between">
-                      <div>
-                        <h1 className="team_name_sm text-[18px]  team_name  font-bold text-[#233876] font-inter ">
-                          {member.name}
-                        </h1>
-                        <p className="font-medium font-inter text-[16px]  team_job text-[#6B7280] mb-2">
-                          {member.job}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="font-inter font-normal text-[16px]  text-[#6B7280] line-clamp-3">
-                          {member.desc}
-                        </p>
-                        <div className="flex gap-5 mt-4">
-                          <FaFacebookF size={22} className="text-[#6B7280]" />
-                          <FaTwitter size={22} className="text-[#6B7280]" />
-                          <FaGithub size={22} className="text-[#6B7280]" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
 
-        <div className="  container mx-auto mt-3 ">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={2}
-            slidesPerView={2}
-            autoplay={{ delay: 2000 }}
-            loop={true}
-            className="mySwiper  "
-          >
-            {teamMembers.map((member, index) => (
-              <SwiperSlide key={index}>
-                <div className="rounded-lg overflow-hidden shadow-xl  my-5 mx-3  ">
-                  <div className="flex flex-col  ">
-                    <div className="w-full h-[225px] team_img_card team_img_card_sm bg-red-500">
-                      <img
-                        src={member.img}
-                        alt=""
-                        className="w-full h-full object-cover "
-                      />
-                    </div>
-                    <div className="p-4 pb- team_card flex flex-col justify-between">
-                      <div>
-                        <h1 className="text-[18px]  team_name font-bold text-[#233876] font-inter ">
-                          {member.name}
-                        </h1>
-                        <p className="font-medium font-inter text-[16px]  team_job text-[#6B7280] mb-2">
-                          {member.job}
-                        </p>
+        <div className="container mx-auto mt-3">
+          {/* 1-Swiper: faqat 480px dan katta ekranlarda */}
+          <div className="hidden min-[481px]:block">
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={2}
+              slidesPerView={4}
+              autoplay={{ delay: 2000 }}
+              loop={true}
+              className="mySwiper"
+            >
+              {teamMembers.map((member, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="rounded-lg overflow-hidden shadow-xl my-5 mx-3"
+                    data-aos="zoom-in"
+                    data-aos-delay={index * 200}
+                  >
+                    <div className="flex flex-col">
+                      <div className="w-full h-[225px] team_img_card team_img_card_sm bg-red-500">
+                        <img
+                          src={member.img}
+                          alt=""
+                          className="w-full h-full object-cover"
+                        />
                       </div>
-                      <div>
-                        <p className="font-inter font-normal text-[16px]  text-[#6B7280] line-clamp-3">
-                          {member.desc}
-                        </p>
-                        <div className="flex gap-5 mt-4">
-                          <FaFacebookF size={22} className="text-[#6B7280]" />
-                          <FaTwitter size={22} className="text-[#6B7280]" />
-                          <FaGithub size={22} className="text-[#6B7280]" />
+                      <div className="p-4 team_card team_card_text_sm flex flex-col justify-between">
+                        <div>
+                          <h1 className="team_name_sm text-[18px] team_name font-bold text-[#233876] font-inter">
+                            {member.name}
+                          </h1>
+                          <p className="font-medium font-inter text-[16px] team_job text-[#6B7280] mb-2">
+                            {member.job}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-inter font-normal text-[16px] text-[#6B7280] line-clamp-3">
+                            {member.desc}
+                          </p>
+                          <div className="flex gap-5 mt-4">
+                            <FaFacebookF size={22} className="text-[#6B7280]" />
+                            <FaTwitter size={22} className="text-[#6B7280]" />
+                            <FaGithub size={22} className="text-[#6B7280]" />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {/* 2-Swiper: faqat 480px va kichik ekranlarda */}
+          <div className="block min-[481px]:hidden">
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={2}
+              slidesPerView={2}
+              autoplay={{ delay: 2000 }}
+              loop={true}
+              className="mySwiper"
+            >
+              {teamMembers.map((member, index) => (
+                <SwiperSlide key={index}>
+                  <div
+                    className="rounded-lg overflow-hidden shadow-xl my-5 mx-3"
+                    data-aos="zoom-in"
+                    data-aos-delay={index * 200}
+                  >
+                    <div className="flex flex-col">
+                      <div className="team_img_card team_img_card_sm bg-red-500">
+                        <img
+                          src={member.img}
+                          alt=""
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className="p-4 team_card_sm flex flex-col justify-between">
+                        <div>
+                          <h1 className="text-[12px] font-bold text-[#233876] font-inter">
+                            {member.name}
+                          </h1>
+                          <p className="font-medium font-inter text-[10px] text-[#6B7280] mb-2">
+                            {member.job}
+                          </p>
+                        </div>
+                        <div>
+                          <p className="font-inter font-normal text-[10px]/4 text-[#6B7280] line-clamp-3">
+                            {member.desc}
+                          </p>
+                          <div className="flex gap-5 mt-4">
+                            <FaFacebookF size={22} className="text-[#6B7280]" />
+                            <FaTwitter size={22} className="text-[#6B7280]" />
+                            <FaGithub size={22} className="text-[#6B7280]" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

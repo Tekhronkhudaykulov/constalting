@@ -10,7 +10,9 @@
     "about": "Biz haqimizda",
     "event": "Jarayon",
     "colictive": "Jamoamiz",
-    "city": "Davlatlar"
+    "city": "Davlatlar",
+    "partners": "Hamkorlar",
+    "contact": "Aloqa"
   },
   "hero": {
     "cta": "Oltin imkoniyatni qo’ldan boy bermang",
@@ -109,5 +111,49 @@
     "theme": "Mavzuni yozing",
     "textArea": "Xabar matni",
     "btn": "Jo’natish"
+  },
+  "footer": {
+    "help_title": "Yo‘l-Yo‘riq Kerakmi? Biz Sizga Yordam Beramiz.",
+    "contact_us": "Biz Bilan Bog‘lanish",
+    "call_now": "Hozir Qo‘ng‘iroq Qiling",
+
+    "contact": {
+      "title": "Aloqa",
+      "city": "Toshkent",
+      "phone_label": "Telefon raqamlari:",
+      "phone": "+998 91 123 45 67",
+      "address_label": "Manzilimiz:",
+      "address": "13 Rustaveli Ave, Block 1, Chilanzar district, Tashkent, Uzbekistan, 100025"
+    },
+
+    "links": {
+      "title": "Linklar",
+      "item": "Bosh sahifa",
+      "item1": "Biz haqimizda",
+      "item2": "Jarayon",
+      "item3": "Jamoamiz",
+      "item4": "Davlatlar",
+      "item5": "Aloqa"
+    },
+
+    "variants": {
+      "title": "Variantlar",
+      "item1": "Kanadada o`qish",
+      "item2": "Yevropada o`qish",
+      "item3": "Koreyada o`qish",
+      "item4": "AQSHda o`qish"
+    },
+
+    "logo_block": {
+      "title": "(Logo)",
+      "desc": "Lorem Ipsum bosma va dizayn sanoatidagi sun’iy matn. U uzoq yillar davomida standart sifatida ishlatilgan.",
+      "flags": {
+        "ca": "Kanada",
+        "eu": "Yevropa",
+        "kr": "Koreya",
+        "us": "AQSH"
+      },
+      "link": "Hoziroq bog’laning"
+    }
   }
 }

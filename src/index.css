@@ -167,6 +167,9 @@
   .team_block {
     display: block;
   }
+  .team_hidden {
+    display: none;
+  }
   .team_card {
     height: 190px;
   }
@@ -178,6 +181,9 @@
   }
   .team_job {
     font-size: 13px;
+  }
+  .city_img {
+    height: 200px;
   }
 }
 
@@ -232,6 +238,9 @@
   .team_name_sm {
     font-size: 10px;
     color: red;
+  }
+  .team_card_sm {
+    height: 150px;
   }
 }
 .team_job {

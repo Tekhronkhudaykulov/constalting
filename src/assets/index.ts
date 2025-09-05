@@ -26,6 +26,11 @@ import partner5 from "./1829b91aa5bf88fca2dc1cafab72db590e295669.png";
 import formPng from "./faa75b264babd493d6483b9d4e9fd4b5bb5b5d55.png";
 import footerBg from "./footerBg.png";
 import herooBg from "./heroBg.png";
+import useIcon from "./flag02.svg";
+import candaIcon from "./flag03.svg";
+import koreaIcon from "./Frame 14.svg";
+import yevroIcon from "./Frame 16.svg";
+
 export {
   About1,
   About2,
@@ -55,4 +60,8 @@ export {
   formPng,
   footerBg,
   herooBg,
+  useIcon,
+  candaIcon,
+  koreaIcon,
+  yevroIcon,
 };

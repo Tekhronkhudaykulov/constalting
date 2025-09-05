@@ -1,8 +1,159 @@
 {
   "header": {
     "emailLabel": "Email:",
-    "phoneLabel": "Hoziroq qo’ngiroq qiling:",
+    "phoneLabel": "Call Now:",
     "phoneNumber": "+998 91 123-45-67",
-    "apply": "Apply Now!"
+    "btn": "Apply Now!"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "event": "Process",
+    "colictive": "Our Team",
+    "city": "Countries",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "cta": "Don’t miss the golden opportunity",
+    "title1": "The power of ",
+    "title2": " good ",
+    "title3": "advice",
+    "highlight": "advice",
+    "point1": "For those who want to change the world",
+    "point2": "Students with great goals",
+    "btn": "Book a Meeting"
+  },
+  "education": {
+    "title": "Take your education to the next level"
+  },
+  "services": {
+    "service1": "Consultation",
+    "service2": "Document Collection",
+    "service3": "Country Selection",
+    "service4": "University Selection",
+    "service5": "Getting Admission Letter",
+    "service6": "Visa Application"
+  },
+  "about": {
+    "sectionTitle": "ABOUT US",
+    "title": "Experienced",
+    "highlight": "Consultants",
+    "desc1": "The most reputable provider of study abroad and visa consulting services.",
+    "desc2": "Our branches are in Tashkent and Bukhara.",
+    "stats": {
+      "admission": "Student Admission",
+      "visa": "Student Visas",
+      "grant": "Winning Grants",
+      "help": "Visa Assistance",
+      "housing": "Providing Student Accommodation"
+    }
+  },
+  "stats": {
+    "universities": "Universities",
+    "experience": "Years of Experience",
+    "happyClients": "Happy Clients",
+    "partners1": "We cooperate with ",
+    "partners2": "international universities"
+  },
+  "process": {
+    "sectionTitle": "Process",
+    "title1": "What sets us apart",
+    "title2": "Study Abroad Consultants",
+    "step1": "Free Consultation Service",
+    "step2": "Help with Choosing Country and University",
+    "step3": "Fast and Reliable Application Process",
+    "step4": "Guidance on Grants, Visa, and Financial Aid"
+  },
+  "team": {
+    "sectionTitle": "OUR TEAM",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    "card1": {
+      "name": "Asadov Sherzod",
+      "job": "Director",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card2": {
+      "name": "Salomov Adiz",
+      "job": "Assistant Director",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card3": {
+      "name": "Shahzoda",
+      "job": "Consultant",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    },
+    "card4": {
+      "name": "Lola",
+      "job": "Deputy Director",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+    }
+  },
+  "citys": {
+    "sectionTitle": "Countries",
+    "title1": "Popular Countries",
+    "title2": "For International Education",
+    "desc": "Our expert team provides study abroad consultation for ambitious students. Our certified education consultants are trusted specialists in immigration services who will help you achieve positive results in your case. We provide study abroad and immigration services worldwide.",
+    "card1": {
+      "title": "USA",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    }
+  },
+  "partners": {
+    "sectionTitle": "Our Partners"
+  },
+  "form": {
+    "sectionTitle1": "Send a ",
+    "sectionTitle2": "Request",
+    "fullName": "Full Name",
+    "city": "City",
+    "phoneNumber": "Phone Number",
+    "theme": "Enter a Subject",
+    "textArea": "Message Text",
+    "btn": "Send"
+  },
+  "footer": {
+    "help_title": "Need Guidance? We Are Here to Help.",
+    "contact_us": "Contact Us",
+    "call_now": "Call Now",
+
+    "contact": {
+      "title": "Contact",
+      "city": "Tashkent",
+      "phone_label": "Phone Numbers:",
+      "phone": "+998 91 123 45 67",
+      "address_label": "Our Address:",
+      "address": "13 Rustaveli Ave, Block 1, Chilanzar district, Tashkent, Uzbekistan, 100025"
+    },
+
+    "links": {
+      "title": "Links",
+      "item": "Home",
+      "item1": "About Us",
+      "item2": "Process",
+      "item3": "Our Team",
+      "item4": "Countries",
+      "item5": "Contact"
+    },
+
+    "variants": {
+      "title": "Options",
+      "item1": "Study in Canada",
+      "item2": "Study in Europe",
+      "item3": "Study in Korea",
+      "item4": "Study in USA"
+    },
+
+    "logo_block": {
+      "title": "(Logo)",
+      "desc": "Lorem Ipsum is dummy text in the printing and design industry. It has been used as a standard for many years.",
+      "flags": {
+        "ca": "Canada",
+        "eu": "Europe",
+        "kr": "Korea",
+        "us": "USA"
+      },
+      "link": "Contact Us Now"
+    }
   }
 }
