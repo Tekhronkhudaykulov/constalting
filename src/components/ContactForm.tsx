@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { formPng } from "../assets";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -30,11 +32,11 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="bg-[#F0F5FB]">
-      <div className="container mx-auto  max-[1281px]:py-15 px-10 ">
+      <div className="container mx-auto  py-10 px-10 ">
         <div className="container mx-auto flex items-center max-[768px]: max-[769px]:justify-center  gap-10 px-5 ">
           {/* Form qismi */}
           <div className="w-[50%] max-[769px]:w-full flex flex-col">
-            <h1 className="font-popins font-semibold text-[42px]/10 max-[] text-[#003760]">
+            <h1 className="font-popins font-semibold text-[42px]/10 max-[768px]:text-[35px] text-[#003760]">
               <span className="text-[#F15C36]">{t("form.sectionTitle1")}</span>{" "}
               {t("form.sectionTitle2")}
             </h1>
@@ -94,9 +96,10 @@ export default function ContactForm() {
 
           {/* Rasm qismi */}
           <div className="flex-1 flex items-center justify-center max-[769px]:hidden ">
-            <img
+            <LazyLoadImage
               src={formPng}
               alt="Form image"
+              effect="blur"
               className="max-h-[600px] w-auto object-contain"
             />
           </div>

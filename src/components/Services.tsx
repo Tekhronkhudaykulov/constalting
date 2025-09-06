@@ -13,12 +13,12 @@ const Services = () => {
 
   return (
     <div className="">
-      <div className="px-10   grid lg:grid-cols-[repeat(6,285px)] md:grid-cols-[repeat(3,215px)]  grid-cols-3  justify-center items-center sm:gap-7 gap-4  -translate-y-13  w-full">
+      <div className="px-10   grid lg:grid-cols-[repeat(6,285px)] md:grid-cols-[repeat(3,215px)]  grid-cols-3  justify-center items-center sm:gap-7 gap-2  -translate-y-13  w-full">
         {/* ---------- */}
-        <div className="flex flex-col p-6 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
+        <div className="flex flex-col sm:p-6 p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <HomeIcon className="w-[65px] h-[65px]  group-hover:text-white text-[#f15c36] --- servic_icon  servic_icon_sm" />
           <h1
-            className="text-[18px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px]  font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >
@@ -30,7 +30,7 @@ const Services = () => {
         <div className="flex flex-col p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <HujjatIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
           <h1
-            className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px] text-center  font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >
@@ -40,7 +40,7 @@ const Services = () => {
         <div className="flex flex-col p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <DavlatIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
           <h1
-            className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px] text-center font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >
@@ -50,7 +50,7 @@ const Services = () => {
         <div className="flex flex-col p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <ExportIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
           <h1
-            className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px] text-center font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >
@@ -60,7 +60,7 @@ const Services = () => {
         <div className="flex flex-col p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <UniverIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
           <h1
-            className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px] text-center font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >
@@ -70,7 +70,7 @@ const Services = () => {
         <div className="flex flex-col p-4 items-center justify-center bg-[#F0F5FB] servic_card_sm servic_card transition-all group hover:bg-[#f15c36]">
           <QabulIcon className="w-[65px] h-[65px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
           <h1
-            className="text-[20px] font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
+            className="text-[18px] text-center font-bold font-georgia group-hover:text-white text-[#323232]  servic_text_sm {
     font-size: ;
   } "
           >

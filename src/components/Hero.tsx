@@ -5,6 +5,7 @@ import { herooBg } from "../assets";
 import { Menu, X } from "lucide-react";
 import "aos/dist/aos.css";
 import { AnimatePresence, motion } from "framer-motion";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
@@ -21,15 +22,15 @@ export default function Hero() {
       {/* Header yuqori kontakt qismi */}
       <div className="w-full h-screen text-white">
         <div className="h-[5vh] px-8 bg-[#0b203b] flex flex-col justify-center py-6 items-center text-white">
-          <div className="container mx-auto flex items-center justify-between">
+          <div className="container mx-auto flex items-center justify-between max-[768px]:justify-end">
             <div className="flex gap-12 nav_hidden" data-aos="fade-right">
-              <p className="flex items-center gap-1 font-georgia text-size ">
+              <p className="flex items-center gap-1 font-georgia text-size max-[1280px]:text-[12px] ">
                 <span className="text-[#f15c36] ">
                   {t("header.emailLabel")}
                 </span>
                 info@rfconsultingsupport.com
               </p>
-              <p className="flex items-center gap-1 font-georgia text-size ">
+              <p className="flex items-center gap-1 font-georgia max-[1280px]:text-[12px]">
                 <span className="text-[#f15c36] ">
                   {t("header.phoneLabel")}
                 </span>
@@ -47,21 +48,23 @@ export default function Hero() {
 
         {/* Navbar */}
         <div className="h-[10vh] bg-white flex">
-          <div className="container mx-auto px-15 flex items-center justify-between">
-            <p className="text-black" data-aos="fade-right">
-              logo
-            </p>
+          <div className="container mx-auto px-15 gap-2 flex items-center justify-between  ">
+            <div>
+              <p className="text-black" data-aos="fade-right">
+                logo
+              </p>
+            </div>
 
             {/* Desktop menu */}
             <nav
-              className="flex items-center gap-5 nav_hidden"
+              className="flex items-center gap-3 nav_hidden"
               data-aos="fade-down"
             >
               <Link
                 to="home"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline  transition-all font-semibold font-popins max-[1280px]:text-[12px]"
               >
                 {t("nav.home")}
               </Link>
@@ -69,7 +72,7 @@ export default function Hero() {
                 to="about"
                 duration={600}
                 smooth
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.about")}
               </Link>
@@ -77,7 +80,7 @@ export default function Hero() {
                 to="event"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.event")}
               </Link>
@@ -85,7 +88,7 @@ export default function Hero() {
                 to="colictive"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.colictive")}
               </Link>
@@ -93,7 +96,7 @@ export default function Hero() {
                 to="city"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.city")}
               </Link>
@@ -101,7 +104,7 @@ export default function Hero() {
                 to="partners"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.partners")}
               </Link>
@@ -109,48 +112,50 @@ export default function Hero() {
                 to="contact"
                 smooth
                 duration={500}
-                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline transition-all font-semibold font-popins text-[16px]"
+                className="cursor-pointer text-[#323232] hover:text-[#f15c36] hover:underline max-[1280px]:text-[12px]  transition-all font-semibold font-popins text-[16px]"
               >
                 {t("nav.contact")}
               </Link>
             </nav>
 
-            <div className="gap-3 ml-auto flex" data-aos="fade-left">
-              <button
-                onClick={() => {
-                  changeLanguage("uz");
-                  setIsOpen(false);
-                }}
-                className={`px-3 py-1 rounded font-semibold transition-colors ${
-                  i18n.language === "uz"
-                    ? "bg-[#F15C36] text-white"
-                    : "bg-white text-black"
-                }`}
-              >
-                UZ
-              </button>
-              <button
-                onClick={() => {
-                  changeLanguage("en"); // ✅ to‘g‘rilandi
-                  setIsOpen(false);
-                }}
-                className={`px-3 py-1 rounded font-semibold transition-colors ${
-                  i18n.language === "en"
-                    ? "bg-[#F15C36] text-white"
-                    : "bg-white text-black"
-                }`}
-              >
-                EN
-              </button>
-            </div>
+            <div>
+              <div className="gap-  hidden md:flex" data-aos="fade-left">
+                <button
+                  onClick={() => {
+                    changeLanguage("uz");
+                    setIsOpen(false);
+                  }}
+                  className={`max-[1280px]:text-[10px]  px-3 py-1 rounded font-semibold transition-colors ${
+                    i18n.language === "uz"
+                      ? "bg-[#F15C36] text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  UZ
+                </button>
+                <button
+                  onClick={() => {
+                    changeLanguage("en"); // ✅ to‘g‘rilandi
+                    setIsOpen(false);
+                  }}
+                  className={`px-3 py-1  max-[1280px]:text-[10px] rounded font-semibold transition-colors ${
+                    i18n.language === "en"
+                      ? "bg-[#F15C36] text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  EN
+                </button>
+              </div>
 
-            {/* Mobile menu icon */}
-            <div className="flex md:hidden" data-aos="fade-left">
-              <Menu
-                size={28}
-                className="text-black cursor-pointer"
-                onClick={() => setIsOpen(true)}
-              />
+              {/* Mobile menu icon */}
+              <div className="flex md:hidden" data-aos="fade-left">
+                <Menu
+                  size={28}
+                  className="text-black cursor-pointer"
+                  onClick={() => setIsOpen(true)}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -222,7 +227,7 @@ export default function Hero() {
                 </Link>
                 <div className="">
                   {/* Language switcher */}
-                  <div className="gap-3 ml-auto flex" data-aos="fade-left">
+                  <div className="gap-3 ml-auto flex">
                     <button
                       onClick={() => {
                         changeLanguage("uz");
@@ -257,60 +262,62 @@ export default function Hero() {
         </AnimatePresence>
 
         {/* Hero image with text */}
-        <div
-          className="h-[85vh] relative bg-right bg-cover hero_img"
-          style={{
-            backgroundImage: `url(${herooBg})`,
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B203B] via-[#2E3B4B]/70 to-transparent"></div>
+        <LazyLoadComponent>
+          <div
+            className="h-[85vh] relative bg-right bg-cover hero_img"
+            style={{
+              backgroundImage: `url(${herooBg})`,
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0B203B] via-[#2E3B4B]/70 to-transparent"></div>
 
-          <div className="container mx-auto flex items-center justify-center relative z-10">
-            <div
-              className="absolute top-[25vh] left-10 lg:left-35"
-              data-aos="fade-up"
-            >
-              <button className="border-white border-3 bg-[#243E6D] font-popins font-bold px-3 py-2 text-white text-[16px]">
-                {t("hero.cta")}
-              </button>
-              <h1
-                className="text-[62px]/20 hero_title font-bold font-playfair mt-4"
-                data-aos="zoom-in"
-              >
-                {t("hero.title1")}
-                <span className="text-[#f15c36]"> {t("hero.title2")}</span>
-                <br />
-                {t("hero.title3")}
-              </h1>
+            <div className="container mx-auto flex items-center justify-center relative z-10">
               <div
-                className="flex items-center gap-10"
-                data-aos="fade-right"
-                data-aos-delay="200"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="w-3 h-3 bg-[#f15c36] rounded-full"></span>
-                  <p className="text-[20px] hero_disc font-medium">
-                    {t("hero.point1")}
-                  </p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-3 h-3 bg-[#f15c36] rounded-full"></span>
-                  <p className="text-[20px] hero_disc font-medium">
-                    {t("hero.point2")}
-                  </p>
-                </div>
-              </div>
-              <button
-                className="px-6 py-2 rounded-full bg-[#f15c36] text-white mt-10"
+                className="absolute top-[25vh] left-10 lg:left-35"
                 data-aos="fade-up"
-                data-aos-delay="300"
               >
-                {t("hero.btn")}
-              </button>
+                <button className="border-white border-3 bg-[#243E6D] font-popins font-bold px-3 py-2 text-white text-[16px] max-[480px]:text-[12px]">
+                  {t("hero.cta")}
+                </button>
+                <h1
+                  className="text-[62px]/20 hero_title font-bold font-playfair mt-4"
+                  data-aos="zoom-in"
+                >
+                  {t("hero.title1")}
+                  <span className="text-[#f15c36]"> {t("hero.title2")}</span>
+                  <br />
+                  {t("hero.title3")}
+                </h1>
+                <div
+                  className="flex items-center justify-between px-3  "
+                  // data-aos="fade-right"
+                  // data-aos-delay="200"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-4 h-3 bg-[#f15c36] rounded-full"></div>
+                    <p className="text-[20px] hero_disc font-medium">
+                      {t("hero.point1")}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="w-4 h-3 bg-[#f15c36] rounded-full"></span>
+                    <p className="text-[20px] hero_disc font-medium">
+                      {t("hero.point2")}
+                    </p>
+                  </div>
+                </div>
+                <button
+                  className="px-6 py-2 rounded-full bg-[#f15c36] text-white mt-10"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  {t("hero.btn")}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </LazyLoadComponent>
       </div>
 
       {/* Education Section */}
