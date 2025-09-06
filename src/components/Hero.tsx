@@ -1,28 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import { herooBg } from "../assets";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import AOS from "aos";
 import "aos/dist/aos.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // animatsiya vaqti
-      once: true, // faqat bir marta ishlashi uchun
-    });
-  }, []);
+  type Language = "uz" | "en" | "ru"; // misol uchun ruscha ham qo‘shilsa
 
-type Language = "uz" | "en" | "ru"; // misol uchun ruscha ham qo‘shilsa
-
-const changeLanguage = (lng: Language) => {
-  i18n.changeLanguage(lng);
-};;
+  const changeLanguage = (lng: Language) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <section id="home">

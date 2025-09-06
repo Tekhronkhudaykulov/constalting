@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Team from "./Team";
+// import Team from "./Team";
 export default function Main() {
   useEffect(() => {
     AOS.init({
