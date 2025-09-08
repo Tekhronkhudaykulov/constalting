@@ -129,7 +129,7 @@ export default function Team() {
           className="text-[15px]  text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
           data-aos="fade-down"
         >
-          {t("citys.sectionTitle")}
+          {t("team.sectionTitle")}
         </p>
       </div>
       <div className="flex justify-center items-center   overflow-hidden">
@@ -141,12 +141,12 @@ export default function Team() {
                 className="keen-slider__slide rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="flex flex-col h-full bg-gray-100 rounded-lg">
-                  <div className="w-full h-[225px] bg-gray-200">
+                  <div className="w-full h-[250px] overflow-hidden ">
                     <LazyLoadImage
                       src={member.img}
                       alt={member.name}
                       effect="blur"
-                      className="w-full h-full object-cover"
+                      className="w-full h-[250px] object-cover"
                     />
                   </div>
                   <div className="p-4 flex flex-col justify-between flex-1">

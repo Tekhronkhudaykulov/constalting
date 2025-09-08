@@ -143,30 +143,30 @@
     height: 135px;
   }
   .stats_icon {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
   .stats_text {
-    font-size: 33px;
+    font-size: 40px;
   }
   .stats_disc {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .proces_cards {
     height: 310px;
   }
   .proces_card {
-    width: 127px;
-    height: 127px;
+    width: 200px;
+    height: 200px;
   }
   .proces_card_bg {
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
   }
   .proces_img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
   }
   .team_block {
     display: block;
@@ -210,11 +210,11 @@
     text-align: center;
   }
   .servic_icon_sm {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
   }
   .servic_text_sm {
-    font-size: 8px;
+    font-size: 12px;
     text-align: center;
   }
   .servic_card_sm {
@@ -222,6 +222,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    gap: 8px;
   }
   .about_title_sm {
     font-size: 25px;
@@ -254,4 +255,36 @@
 }
 .team_job {
   font-size: 13px;
+}
+
+.progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  transform: translateY(10px);
+}
+
+.progress-container {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 5px;
+}
+
+.progress-bar {
+  background: #083d59;
+  height: 100%;
+  width: 0;
+  transition: width 2.5s ease-in-out;
+}
+
+.progress-label {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }

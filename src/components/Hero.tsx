@@ -21,8 +21,8 @@ export default function Hero() {
     <section id="home">
       {/* Header yuqori kontakt qismi */}
       <div className="w-full h-screen text-white">
-        <div className="h-[5vh] px-8 bg-[#0b203b] flex flex-col justify-center py-6 items-center text-white">
-          <div className="container mx-auto flex items-center justify-between max-[768px]:justify-end">
+        <div className="h-[5vh]  bg-[#0b203b] flex flex-col justify-center py-6 items-center text-white">
+          <div className="container mx-auto px-8 flex items-center justify-between max-[768px]:justify-end">
             <div className="flex gap-12 nav_hidden" data-aos="fade-right">
               <p className="flex items-center gap-1 font-georgia text-size max-[1280px]:text-[12px] ">
                 <span className="text-[#f15c36] ">
@@ -48,7 +48,7 @@ export default function Hero() {
 
         {/* Navbar */}
         <div className="h-[10vh] bg-white flex">
-          <div className="container mx-auto px-15 gap-2 flex items-center justify-between  ">
+          <div className="container mx-auto px-8 gap-2 flex items-center justify-between  ">
             <div>
               <p className="text-black" data-aos="fade-right">
                 logo
@@ -289,11 +289,7 @@ export default function Hero() {
                   <br />
                   {t("hero.title3")}
                 </h1>
-                <div
-                  className="flex items-center justify-between px-3  "
-                  // data-aos="fade-right"
-                  // data-aos-delay="200"
-                >
+                <div className="flex items-center justify-between px-3  gap-6 ">
                   <div className="flex items-center gap-3">
                     <div className="w-4 h-3 bg-[#f15c36] rounded-full"></div>
                     <p className="text-[20px] hero_disc font-medium">

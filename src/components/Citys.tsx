@@ -8,17 +8,58 @@ import {
 } from "../assets";
 
 import { useTranslation } from "react-i18next";
-import { LazyLoadImage } from "react-lazy-load-image-component"; // 🔥 qo'shildi
-import "react-lazy-load-image-component/src/effects/blur.css"; // 🔥 qo'shildi
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Citys() {
   const { t } = useTranslation();
+
+  // 🔥 Cardlar uchun massiv
+  const cards = [
+    {
+      img: davlat1,
+      aos: "fade-right",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+    {
+      img: davlat2,
+      aos: "fade-up",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+    {
+      img: davlat3,
+      aos: "fade-left",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+    {
+      img: davlat4,
+      aos: "flip-right",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+    {
+      img: davlat5,
+      aos: "flip-left",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+    {
+      img: davlat6,
+      aos: "zoom-in",
+      title: "citys.card1.title",
+      desc: "citys.card1.desc",
+    },
+  ];
+
   return (
     <section id="city">
       <div className="container mx-auto mb-20 px-10">
-        <div className=" flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <p
-            className="text-[15px]  text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
+            className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
             data-aos="fade-down"
           >
             {t("citys.sectionTitle")}
@@ -43,132 +84,33 @@ export default function Citys() {
             {t("citys.desc")}
           </p>
 
-          <div className="grid  min-[1280px]:grid-cols-[repeat(3,400px)] max-[768px]:grid-cols-[repeat(3,130px)] max-[480px]:grid-cols-[repeat(2,150px)] gap-10 max-[480px]:gap-3 mt-8">
-            {/* Card 1 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="fade-right"
-            >
-              <LazyLoadImage
-                src={davlat1}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 py-2 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white min-[768px]:text-[20px] font-popins text-[30px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
-              </div>
-            </div>
+          {/* 🔥 Map orqali cardlarni chiqarish */}
+          <div className="grid 2xl:grid-cols-[repeat(3,350px)] md:grid-cols-[repeat(2,300px)] max-[480px]:grid-cols-[repeat(1,300px)] gap-10 max-[480px]:gap-3 mt-8">
+            {cards.map((card, i) => (
+              <div
+                key={i}
+                className="relative group rounded-lg overflow-hidden shadow-2xl"
+                data-aos={card.aos}
+              >
+                <div className="md:h-[320px]  max-[768px]:h-[300px]">
+                  <LazyLoadImage
+                    src={card.img}
+                    alt={`city-${i}`}
+                    effect="blur"
+                    className="w-full h-[325px] object-cover transition-all duration-1000 group-hover:scale-105 "
+                  />
+                </div>
 
-            {/* Card 2 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="fade-up"
-            >
-              <LazyLoadImage
-                src={davlat2}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
+                <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
+                    {t(card.title)}
+                  </h1>
+                  <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
+                    {t(card.desc)}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            {/* Card 3 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="fade-left"
-            >
-              <LazyLoadImage
-                src={davlat3}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="flip-right"
-            >
-              <LazyLoadImage
-                src={davlat4}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Card 5 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="flip-left"
-            >
-              <LazyLoadImage
-                src={davlat5}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
-              </div>
-            </div>
-
-            {/* Card 6 */}
-            <div
-              className="relative group rounded-lg overflow-hidden shadow-2xl"
-              data-aos="zoom-in"
-            >
-              <LazyLoadImage
-                src={davlat6}
-                alt="team"
-                effect="blur"
-                className="w-full h-[315px] max-[768px]:h-[150px] max-[480px]:h-[100px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
-                  {t("citys.card1.title")}
-                </h1>
-                <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
-                  {t("citys.card1.desc")}
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
