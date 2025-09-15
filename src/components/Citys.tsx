@@ -84,8 +84,7 @@ export default function Citys() {
             {t("citys.desc")}
           </p>
 
-          {/* 🔥 Map orqali cardlarni chiqarish */}
-          <div className="grid 2xl:grid-cols-[repeat(3,350px)] md:grid-cols-[repeat(2,300px)] max-[480px]:grid-cols-[repeat(1,300px)] gap-10 max-[480px]:gap-3 mt-8">
+          <div className="grid 2xl:grid-cols-[repeat(3,350px)] md:grid-cols-[repeat(3,300px)] max-[480px]:grid-cols-[repeat(1,300px)] gap-10 max-[480px]:gap-3 mt-8">
             {cards.map((card, i) => (
               <div
                 key={i}
@@ -97,7 +96,7 @@ export default function Citys() {
                     src={card.img}
                     alt={`city-${i}`}
                     effect="blur"
-                    className="w-full h-[325px] object-cover transition-all duration-1000 group-hover:scale-105 "
+                    className="w-full h-[325px] object-cover transform transition-transform duration-[2000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-102"
                   />
                 </div>
 
