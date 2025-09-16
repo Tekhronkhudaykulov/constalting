@@ -37,28 +37,28 @@ export default function Footer() {
 
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Aloqa */}
-              <div>
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
                 <h3 className="text-lg font-semibold font-georgia mb-6">
                   {" "}
                   {t("footer.contact.title")}
                 </h3>
-                <p className="font-georgia text-[12px] font-bold">
+                <p className="font-georgia text-[14px] font-bold text-center sm:text-left">
                   {" "}
                   {t("footer.contact.city")}
                 </p>
-                <p className="font-georgia text-[12px] font-bold mt-3">
+                <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.phone_label")}
                   <span className="font-normal">
                     {t("footer.contact.phone")}
                   </span>
                 </p>
-                <p className="font-georgia text-[12px] font-bold mt-3">
+                <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.address_label")}
                   <span className="font-normal">
                     {t("footer.contact.address")}
                   </span>
                 </p>
-                <div className="flex gap-3 mt-15">
+                <div className="flex gap-3 sm:mt-15 mt-3">
                   <a
                     href="#"
                     className="bg-[#385DA9] text-white p-[15px] rounded-lg"
@@ -88,7 +88,7 @@ export default function Footer() {
 
               {/* Linklar */}
               {/* Linklar */}
-              <div>
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
                 <h3 className="text-lg font-semibold font-georgia mb-6">
                   {t("footer.links.title")}
                 </h3>
@@ -98,7 +98,7 @@ export default function Footer() {
                       to="home"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item")}
                     </Link>
@@ -108,7 +108,7 @@ export default function Footer() {
                       to="about"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item1")}
                     </Link>
@@ -118,7 +118,7 @@ export default function Footer() {
                       to="event"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item2")}
                     </Link>
@@ -128,7 +128,7 @@ export default function Footer() {
                       to="colictive"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item3")}
                     </Link>
@@ -138,7 +138,7 @@ export default function Footer() {
                       to="city"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item4")}
                     </Link>
@@ -148,7 +148,7 @@ export default function Footer() {
                       to="partners"
                       smooth
                       duration={600}
-                      className="cursor-pointer font-georgia text-[12px] font-normal flex items-center hover:text-[#f15c36] transition-all"
+                      className="cursor-pointer font-georgia text-[14px] font-normal flex items-center hover:text-[#f15c36] transition-all"
                     >
                       <ChevronRight size={15} /> {t("footer.links.item5")}
                     </Link>
@@ -157,7 +157,7 @@ export default function Footer() {
               </div>
 
               {/* Variantlar */}
-              <div>
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
                 <h3 className="text-lg font-semibold font-georgia mb-2">
                   {t("footer.variants.title")}
                 </h3>
@@ -165,7 +165,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="font-georgia text-[12px] font-normal flex items-center"
+                      className="font-georgia text-[14px] font-normal flex items-center"
                     >
                       <ChevronRight size={15} /> {t("footer.variants.item1")}
                     </a>
@@ -173,7 +173,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="font-georgia text-[12px] font-normal flex items-center"
+                      className="font-georgia text-[14px] font-normal flex items-center"
                     >
                       <ChevronRight size={15} /> {t("footer.variants.item2")}
                     </a>
@@ -181,7 +181,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="font-georgia text-[12px] font-normal flex items-center"
+                      className="font-georgia text-[14px] font-normal flex items-center"
                     >
                       <ChevronRight size={15} /> {t("footer.variants.item3")}
                     </a>
@@ -189,7 +189,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="font-georgia text-[12px] font-normal flex items-center"
+                      className="font-georgia text-[14px] font-normal flex items-center"
                     >
                       <ChevronRight size={15} /> {t("footer.variants.item3")}
                     </a>
@@ -197,7 +197,7 @@ export default function Footer() {
                   <li>
                     <a
                       href="#"
-                      className="font-georgia text-[12px] font-normal flex items-center"
+                      className="font-georgia text-[14px] font-normal flex items-center"
                     >
                       <ChevronRight size={15} /> {t("footer.variants.item4")}
                     </a>
@@ -206,11 +206,11 @@ export default function Footer() {
               </div>
 
               {/* Logo va bayroqlar */}
-              <div>
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
                 <h3 className="text-lg font-semibold mb-4">
                   {t("footer.logo_block.title")}
                 </h3>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-300 text-center sm:text-left">
                   {t("footer.logo_block.desc")}
                 </p>
                 <div className="grid grid-cols-4  items-start justify-start gap-4 mt-4 mb-8">

@@ -17,9 +17,9 @@ export default function About() {
 
   return (
     <section id="about">
-      <div className="grid grid-cols-2  justify-center container mx-auto  px-10 sm:gap-7 gap-12">
+      <div className="sm:grid grid-cols-2 flex  justify-center container mx-auto  px-10 sm:gap-7 gap-12">
         {/* Left text */}
-        <div className=" w-full" data-aos="fade-right">
+        <div className="sm:block flex flex-col justify-center items-center w-full" data-aos="fade-right">
           <p className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max">
             {t("about.sectionTitle")}
           </p>
@@ -34,14 +34,14 @@ export default function About() {
           </h1>
 
           <p
-            className="text-[16px] text-[#7A8A9E] font-popins"
+            className="sm:text-[16px] text-center sm:text-left text-[14px] text-[#7A8A9E] font-popins mt-2"
             data-aos="fade-up"
             data-aos-delay="400"
           >
             {t("about.desc1")}
           </p>
           <p
-            className="text-[16px] text-[#7A8A9E] font-popins"
+            className="sm:text-[16px] text-[13px] text-[#7A8A9E] font-popins"
             data-aos="fade-up"
             data-aos-delay="600"
           >
@@ -58,8 +58,8 @@ export default function About() {
                 data-aos-delay={800 + i * 100}
               >
                 <div className="flex items-center pl-3 justify-between w-[95%] py-1.5">
-                  <p className="text-[16px] text-[#323232]">{t(stat.key)}</p>
-                  <p className="text-[16px] text-[#323232]">{stat.value}%</p>
+                  <p className="sm:text-[16px] text-[13px] text-[#323232]">{t(stat.key)}</p>
+                  <p className="sm:text-[16px] text-[13px] text-[#323232]">{stat.value}%</p>
                 </div>
                 <ProgressBars values={[stat.value]} />
               </div>
@@ -68,7 +68,7 @@ export default function About() {
         </div>
 
         {/* Right images */}
-        <div className="w-full md:grid grid-cols-2">
+        <div className="w-full hidden sm:grid grid-cols-2">
           <div className="w-full">
             <LazyLoadImage
               src={About1}

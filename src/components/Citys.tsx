@@ -56,7 +56,7 @@ export default function Citys() {
 
   return (
     <section id="city">
-      <div className="container mx-auto mb-20 px-10">
+      <div className="container mx-auto mb-20 px-10 py-15">
         <div className="flex flex-col items-center justify-center">
           <p
             className="text-[15px] text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
@@ -78,7 +78,7 @@ export default function Citys() {
             {t("citys.title2")}
           </h1>
           <p
-            className="text-[16px] max-[480px]:text-[10px] text-[#7A8A9E] font-roboto mt-6 text-center"
+            className="text-[16px] max-[480px]:text-[14px] text-[#7A8A9E] font-roboto mt-6 text-center"
             data-aos="zoom-in"
           >
             {t("citys.desc")}
@@ -91,7 +91,7 @@ export default function Citys() {
                 className="relative group rounded-lg overflow-hidden shadow-2xl"
                 data-aos={card.aos}
               >
-                <div className="md:h-[320px]  max-[768px]:h-[300px]">
+                <div className="md:h-[320px]  max-[768px]:h-[250px]">
                   <LazyLoadImage
                     src={card.img}
                     alt={`city-${i}`}
@@ -101,7 +101,7 @@ export default function Citys() {
                 </div>
 
                 <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h1 className="text-white font-popins text-[30px] min-[768px]:text-[20px] font-bold">
+                  <h1 className="text-white font-popins text-[30px] min-[768px]:text-[18px] font-bold">
                     {t(card.title)}
                   </h1>
                   <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">

@@ -32,8 +32,8 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="bg-[#F0F5FB]">
-      <div className="container mx-auto  py-10 px-10 ">
-        <div className="container mx-auto flex items-center max-[768px]: max-[769px]:justify-center  gap-10 px-5 ">
+      <div className="container mx-auto  py-10">
+        <div className="container mx-auto flex items-center max-[768px]: max-[769px]:justify-center  gap-10">
           {/* Form qismi */}
           <div className="w-[50%] max-[769px]:w-full flex flex-col">
             <h1 className="font-popins font-semibold text-[42px]/10 max-[768px]:text-[35px] text-[#003760]">
@@ -43,14 +43,14 @@ export default function ContactForm() {
 
             <form
               onSubmit={handleSubmit}
-              className="grid grid-cols-2  gap-4 mt-4  "
+              className="sm:grid grid-cols-2  gap-4 mt-4 flex flex-col items-center justify-center w-full"
             >
               <input
                 type="text"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                className="outline-none w-full border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
                 placeholder="Ism familiya"
               />
               <input
@@ -58,7 +58,7 @@ export default function ContactForm() {
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
-                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                className="outline-none  w-full border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
                 placeholder="Shahar"
               />
               <input
@@ -66,7 +66,7 @@ export default function ContactForm() {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                className="outline-none  w-full border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
                 placeholder="Telefon raqam"
               />
               <input
@@ -74,7 +74,7 @@ export default function ContactForm() {
                 name="theme"
                 value={formData.theme}
                 onChange={handleChange}
-                className="outline-none border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
+                className="outline-none  w-full border-[#CED7E4] font-roboto text-[15px] rounded-[5px] text-[#7A8A9E] border-2 py-3 px-5 col-span-1"
                 placeholder="Mavzu"
               />
               <textarea
@@ -82,7 +82,7 @@ export default function ContactForm() {
                 name="textArea"
                 value={formData.textArea}
                 onChange={handleChange}
-                className="bg-white font-roboto text-[15px] text-[#7A8A9E] border-[#CED7E4] rounded-[5px] border-2 p-4 outline-none col-span-2"
+                className="bg-white  w-full font-roboto text-[15px] text-[#7A8A9E] border-[#CED7E4] rounded-[5px] border-2 p-4 outline-none col-span-2"
                 placeholder="Xabar"
               />
               <button

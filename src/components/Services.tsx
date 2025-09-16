@@ -109,18 +109,19 @@ const Services = () => {
   return (
     <div>
       <div
-        className="px-15 grid  grid-cols-2
+        className="sm:px-15 px-5 grid  grid-cols-1
         lg:grid-cols-[repeat(3,300px)]
         xl:grid-cols-[repeat(6,180px)]
         2xl:grid-cols-[repeat(6,250px)]
-       justify-center items-center sm:gap-4 gap-2 -translate-y-13 w-full"
+       justify-center items-center sm:gap-4 gap-2 -translate-y-13 w-full
+       sm:mt-0 mt-[-270px]"
       >
         {services.map(({ Icon, text }, i) => (
           <div
             key={i}
             className="flex flex-col sm:p-6 p-4 items-center justify-start bg-[#F0F5FB] servic_card_sm servic_card xl:h-[150px] transition-all group hover:bg-[#f15c36]"
           >
-            <Icon className="w-[65px] h-[65px] xl:w-[55px] xl:h-[55px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
+            <Icon className="w-[65px] h-[65px] xl:w-[50px] xl:h-[50px] group-hover:text-white text-[#f15c36] servic_icon servic_icon_sm" />
             <h1 className="text-[18px] xl:text-[16px] text-center font-bold font-georgia group-hover:text-white text-[#323232] servic_text_sm">
               {t(text)}
             </h1>

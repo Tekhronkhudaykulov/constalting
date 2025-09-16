@@ -124,7 +124,7 @@ export default function Team() {
 
   return (
     <div className="container mx-auto my-15 px-10">
-      <div className="mb-15 flex items-center justify-center">
+      <div className="mb-8 flex items-center justify-center">
         <p
           className="text-[15px]  text-[#7A8A9E] font-popins font-semibold border-b-3 border-[#7A8A9E] w-max"
           data-aos="fade-down"

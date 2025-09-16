@@ -21,9 +21,12 @@ export default function Hero() {
     <section id="home">
       {/* Header yuqori kontakt qismi */}
       <div className="w-full h-screen text-white">
-        <div className="h-[5vh]  bg-[#0b203b] flex flex-col justify-center py-6 items-center text-white">
-          <div className="container mx-auto px-8 flex items-center justify-between max-[768px]:justify-end">
-            <div className="flex gap-12 nav_hidden" data-aos="fade-right">
+        <div className="h-[5vh] sm:flex hidden  bg-[#0b203b] flex-col justify-center py-8 items-center text-white">
+          <div className="container flex items-center justify-between">
+            <div
+              className="flex max-[475px]:flex-col sm:gap-12 gap-2"
+              data-aos="fade-right"
+            >
               <p className="flex items-center gap-1 font-georgia text-size max-[1280px]:text-[12px] ">
                 <span className="text-[#f15c36] ">
                   {t("header.emailLabel")}
@@ -38,7 +41,7 @@ export default function Hero() {
               </p>
             </div>
             <button
-              className="px-4 py-1.5 bg-[#f15c36] nav-btn font-georgia rounded-full"
+              className="sm:px-4 sm:py-1.5 px-2 py-1 text-[10px] bg-[#f15c36] nav-btn font-georgia rounded-full"
               data-aos="fade-left"
             >
               {t("header.btn")}
@@ -48,7 +51,7 @@ export default function Hero() {
 
         {/* Navbar */}
         <div className="h-[10vh] bg-white flex">
-          <div className="container mx-auto px-8 gap-2 flex items-center justify-between  ">
+          <div className="container  gap-2 flex items-center justify-between  ">
             <div>
               <p className="text-black" data-aos="fade-right">
                 logo
@@ -119,7 +122,7 @@ export default function Hero() {
             </nav>
 
             <div>
-              <div className="gap-  hidden md:flex" data-aos="fade-left">
+              <div className="gap-2 hidden md:flex" data-aos="fade-left">
                 <button
                   onClick={() => {
                     changeLanguage("uz");
@@ -151,7 +154,7 @@ export default function Hero() {
               {/* Mobile menu icon */}
               <div className="flex md:hidden" data-aos="fade-left">
                 <Menu
-                  size={28}
+                  size={24}
                   className="text-black cursor-pointer"
                   onClick={() => setIsOpen(true)}
                 />
@@ -172,20 +175,20 @@ export default function Hero() {
               {/* Close button */}
               <div className="flex justify-end p-6">
                 <X
-                  size={30}
+                  size={24}
                   className="cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 />
               </div>
 
               {/* Menu items */}
-              <div className="flex flex-col items-center justify-center gap-8 flex-1 text-xl font-semibold">
+              <div className="flex flex-col items-center  gap-8 pt-[50px] text-xl font-semibold">
                 <Link
                   onClick={() => setIsOpen(false)}
                   to="home"
                   smooth
                   duration={500}
-                  className="cursor-pointer hover:text-[#f15c36]"
+                  className="cursor-pointer hover:text-[#f15c36] text-[15px]"
                 >
                   {t("nav.home")}
                 </Link>
@@ -194,7 +197,7 @@ export default function Hero() {
                   to="about"
                   smooth
                   duration={500}
-                  className="cursor-pointer hover:text-[#f15c36]"
+                  className="cursor-pointer hover:text-[#f15c36] text-[15px]"
                 >
                   {t("nav.about")}
                 </Link>
@@ -203,7 +206,7 @@ export default function Hero() {
                   to="event"
                   smooth
                   duration={500}
-                  className="cursor-pointer hover:text-[#f15c36]"
+                  className="cursor-pointer hover:text-[#f15c36] text-[15px]"
                 >
                   {t("nav.event")}
                 </Link>
@@ -212,7 +215,7 @@ export default function Hero() {
                   to="colictive"
                   smooth
                   duration={500}
-                  className="cursor-pointer hover:text-[#f15c36]"
+                  className="cursor-pointer hover:text-[#f15c36] text-[15px]"
                 >
                   {t("nav.colictive")}
                 </Link>
@@ -221,19 +224,19 @@ export default function Hero() {
                   to="city"
                   smooth
                   duration={500}
-                  className="cursor-pointer hover:text-[#f15c36]"
+                  className="cursor-pointer hover:text-[#f15c36] text-[15px]"
                 >
                   {t("nav.city")}
                 </Link>
                 <div className="">
                   {/* Language switcher */}
-                  <div className="gap-3 ml-auto flex">
+                  <div className="gap-2 ml-auto flex">
                     <button
                       onClick={() => {
                         changeLanguage("uz");
                         setIsOpen(false);
                       }}
-                      className={`px-3 py-1 rounded font-semibold transition-colors ${
+                      className={`px-3 py-1 rounded font-semibold transition-colors text-[15px] ${
                         i18n.language === "uz"
                           ? "bg-[#F15C36] text-white"
                           : "bg-white text-black"
@@ -246,7 +249,7 @@ export default function Hero() {
                         changeLanguage("en"); // ✅ to‘g‘rilandi
                         setIsOpen(false);
                       }}
-                      className={`px-3 py-1 rounded font-semibold transition-colors ${
+                      className={`px-3 py-1 rounded font-semibold transition-colors text-[15px] ${
                         i18n.language === "en"
                           ? "bg-[#F15C36] text-white"
                           : "bg-white text-black"
@@ -272,9 +275,9 @@ export default function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#0B203B] via-[#2E3B4B]/70 to-transparent"></div>
 
-            <div className="container mx-auto flex items-center justify-center relative z-10">
+            <div className="container flex items-center justify-center relative z-10">
               <div
-                className="absolute top-[25vh] left-10 lg:left-35"
+                className="absolute top-[25vh] left-5 lg:left-35"
                 data-aos="fade-up"
               >
                 <button className="border-white border-3 bg-[#243E6D] font-popins font-bold px-3 py-2 text-white text-[16px] max-[480px]:text-[12px]">
@@ -289,7 +292,7 @@ export default function Hero() {
                   <br />
                   {t("hero.title3")}
                 </h1>
-                <div className="flex items-center justify-between px-3  gap-6 ">
+                <div className="sm:flex hidden items-center justify-between px-3 sm:mt-0 mt-2 gap-6 ">
                   <div className="flex items-center gap-3">
                     <div className="w-4 h-3 bg-[#f15c36] rounded-full"></div>
                     <p className="text-[20px] hero_disc font-medium">
@@ -304,12 +307,21 @@ export default function Hero() {
                   </div>
                 </div>
                 <button
-                  className="px-6 py-2 rounded-full bg-[#f15c36] text-white mt-10"
+                  className="px-6 py-2 sm:block hidden rounded-full bg-[#f15c36] text-white sm:mt-10 mt-4"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
                   {t("hero.btn")}
                 </button>
+                <a href="#contact">
+                  <button
+                    className="px-6 py-2 sm:hidden block rounded-full bg-[#f15c36] text-white sm:mt-10 mt-4"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    {t("header.btn")}
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -317,9 +329,9 @@ export default function Hero() {
       </div>
 
       {/* Education Section */}
-      <div className="bg-[#0B203B]">
+      <div className="bg-[#0B203B] px-15 pb-[335px] pt-15 sm:pb-20">
         <div
-          className="container mx-auto flex items-center justify-center px-15 pt-15 pb-20"
+          className="container mx-auto flex items-center justify-center"
           data-aos="fade-up"
         >
           <h1 className="text-white text-[40px] hero_b_title_md hero_b_title_sm font-popins font-bold">

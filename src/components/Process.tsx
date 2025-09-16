@@ -14,7 +14,7 @@ export default function Process() {
   return (
     <section id="event">
       <div
-        className="container mx-auto px-10 flex flex-col items-center justify-center my-15"
+        className="container mx-auto px-10 flex flex-col items-center justify-center py-15"
         data-aos="fade-up"
       >
         <p
@@ -39,7 +39,7 @@ export default function Process() {
         </h1>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-center gap-3 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-center sm:gap-3 gap-6 mt-6">
           {steps.map((item, index) => (
             <div
               className="flex flex-col  items-center justify-start gap-4 proces_cards proces_cards_sm h-[350px]  "
@@ -51,7 +51,7 @@ export default function Process() {
                   src={item.img}
                   alt="About image 1"
                   effect="blur"
-                  className="w-[210px] h-[210px] max-[480px]:h-full max-[480px]:w-full proces_img object-center"
+                  className="w-[210px] h-[210px] max-[480px]:h-full max-[480px]:w-full proces_img object-center rounded-full"
                 />
                 <div className="absolute w-[210px] h-[210px] proces_card_bg bg-black/40 rounded-full flex items-end justify-center">
                   <p className="text-[48px] font-bold text-transparent custom-stroke border-white">
@@ -59,7 +59,7 @@ export default function Process() {
                   </p>
                 </div>
               </div>
-              <h1 className="text-[18px] text-center font-bold font-georgia text-[#1A1A1A]">
+              <h1 className="sm:text-[18px] text-[16px] text-center font-bold font-georgia text-[#1A1A1A]">
                 {item.title}
               </h1>
             </div>

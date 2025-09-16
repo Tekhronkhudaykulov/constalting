@@ -1,4 +1,30 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1245px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 725px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .font-georgia {
   font-family: Georgia, serif;
 }
@@ -64,6 +90,10 @@
   user-select: none;
   opacity: 0.9;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.stats_disc {
+  text-align: center;
 }
 
 .marquee__track img:hover {
@@ -139,9 +169,6 @@
     font-size: 35px;
     line-height: 50px;
   }
-  .stats_card {
-    height: 135px;
-  }
   .stats_icon {
     width: 50px;
     height: 50px;
@@ -205,8 +232,16 @@
   .hero_disc {
     font-size: 12px;
   }
-  .hero_b_title_sm {
+  .stats_disc {
     font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .stats_text {
+    font-size: 25px;
+  }
+  .hero_b_title_sm {
+    font-size: 16px;
     text-align: center;
   }
   .servic_icon_sm {
@@ -225,18 +260,15 @@
     gap: 8px;
   }
   .about_title_sm {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .stats_card {
-    height: 120px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .proces_cards_sm {
     height: 275px;
     height: max-content;
   }
   .proces_title {
-    font-size: 25px;
+    font-size: 20px;
   }
   .team_hidden_sm {
     display: none;
