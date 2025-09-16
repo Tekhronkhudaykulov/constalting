@@ -8,7 +8,7 @@ i18n.use(initReactI18next).init({
     uz: { translation: uz },
     en: { translation: en },
   },
-  lng: "uz", // default til
+  lng: "en", // default til
   fallbackLng: "en", // agar tarjima topilmasa, inglizchaga o‘tadi
   interpolation: {
     escapeValue: false,
