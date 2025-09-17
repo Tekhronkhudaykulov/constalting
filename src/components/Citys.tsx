@@ -10,9 +10,11 @@ import {
 import { useTranslation } from "react-i18next";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useState } from "react";
 
 export default function Citys() {
   const { t } = useTranslation();
+  const [activeCard, setActiveCard] = useState(null);
 
   // 🔥 Cardlar uchun massiv
   const cards = [
@@ -60,6 +62,10 @@ export default function Citys() {
     },
   ];
 
+  const handleCardClick = (index: any) => {
+    setActiveCard(activeCard === index ? null : index);
+  };
+
   return (
     <section id="city">
       <div className="container mx-auto mb-20 px-10 py-15">
@@ -96,8 +102,9 @@ export default function Citys() {
                 key={i}
                 className="relative group rounded-lg overflow-hidden shadow-2xl"
                 data-aos={card.aos}
+                onClick={() => handleCardClick(i)}
               >
-                <div className="md:h-[420px]  max-[768px]:h-[350px]">
+                <div className="md:h-[420px] max-[768px]:h-[350px]">
                   <LazyLoadImage
                     src={card.img}
                     alt={`city-${i}`}
@@ -106,8 +113,12 @@ export default function Citys() {
                   />
                 </div>
 
-                <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h1 className="text-white font-popins md:text-[20px] text-[16px]  font-bold">
+                <div
+                  className={`absolute inset-0 bg-black/60 flex flex-col items-center justify-around transition-opacity duration-500 ${
+                    activeCard === i || "group-hover:opacity-100 opacity-0"
+                  }`}
+                >
+                  <h1 className="text-white font-popins md:text-[20px] text-[16px] font-bold">
                     {t(card.title)}
                   </h1>
                   <p className="text-white text-left px-7 md:text-[14px]/[18px] text-[12px] font-roboto">

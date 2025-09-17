@@ -85,25 +85,6 @@ export default function Team() {
   const { t } = useTranslation();
   const teamMembers = [
     {
-      img: colective1,
-      name: t("team.card1.name"),
-      job: t("team.card1.job"),
-      desc: t("team.card1.desc"),
-      desc2: t("team.card1.desc2"),
-      facebook: "#",
-      telegram: "https://t.me/+447511988672",
-      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195"
-    },
-    {
-      img: colective2,
-      name: t("team.card2.name"),
-      job: t("team.card2.job"),
-      desc: t("team.card2.desc"),
-      facebook: "#",
-      telegram: "#",
-      linkendin: "#"
-    },
-    {
       img: colective3,
       name: t("team.card3.name"),
       job: t("team.card3.job"),
@@ -114,11 +95,30 @@ export default function Team() {
       linkendin: "https://www.linkedin.com/in/iroda-khamidova-48280825a"
     },
     {
+      img: colective1,
+      name: t("team.card1.name"),
+      job: t("team.card1.job"),
+      desc: t("team.card1.desc"),
+      desc2: t("team.card1.desc2"),
+      facebook: "#",
+      telegram: "https://t.me/+447511988672",
+      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195"
+    },
+    {
       img: colective4,
       name: t("team.card4.name"),
       job: t("team.card4.job"),
       desc: t("team.card4.desc"),
       desc2: t("team.card4.desc2"),
+      facebook: "#",
+      telegram: "#",
+      linkendin: "#"
+    },
+    {
+      img: colective2,
+      name: t("team.card2.name"),
+      job: t("team.card2.job"),
+      desc: t("team.card2.desc"),
       facebook: "#",
       telegram: "#",
       linkendin: "#"

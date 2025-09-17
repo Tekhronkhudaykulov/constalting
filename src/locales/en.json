@@ -68,29 +68,29 @@
   "team": {
     "sectionTitle": "OUR TEAM",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    "card1": {
-      "name": "Rakhmonjon Khamidov",
-      "job": "Director",
-      "desc": "Within 4 years, I have been working in the education sector, helping students pursue their ambitions of studying overseas. Holding both a Bachelor’s and a Master’s degree from INKHA University in South Korea, I bring a strong international perspective and academic expertise to my role.",
-      "desc2": "At RF Consulting, I assist students in selecting suitable universities and majors, while also providing guidance on applications and visa procedures. I actively collaborate with parents as well, ensuring they are engaged and supported throughout their child’s academic journey."
-    },
-    "card2": {
-      "name": "Salomov Adiz",
-      "job": "Consultant",
-      "desc": "At RF Consulting, I work alongside students to help them navigate their academic journey and choose the universities and courses best suited to their ambitions. By drawing on my understanding of international education systems, I provide tailored guidance that makes the application process smoother and more effective. I also collaborate with parents to ensure they feel confident and engaged throughout the decision-making process. Beyond this, I support students in drafting compelling motivation letters and Statements of Purpose (SOPs) that showcase their strengths and enhance their chances of admission."
-    },
-    "card3": {
-      "name": "Iroda Khamidova",
-      "job": "CEO",
-      "desc": "As CEO of RF Consulting, I am dedicated to guiding students through every step of their academic journey abroad. From selecting the right university and major to completing applications and securing visas, I ensure students receive the support they need to succeed.",
-      "desc2": "With more than 4 years of experience in the education field, a Master’s degree from Northeastern University London (UK), and professional certification from ICEF, I bring both academic insight and proven expertise to the field of international education consulting. At RF Consulting, my mission is to simplify complex processes, empower students with the right choices, and open doors to global opportunities."
-    },
-    "card4": {
-      "name": "Texron",
-      "job": "IT Programmer",
-      "desc": "As an IT Programmer at RF Consulting, I am responsible for managing and maintaining our digital systems to ensure smooth operations. I also interact directly with students through our online platforms, providing technical assistance and support whenever needed.",
-      "desc2": "By combining technical expertise with a student-focused approach, I help create a reliable and efficient system that supports both our team and the students we serve."
-    }
+      "card1": {
+        "name": "Rakhmonjon Khamidov",
+        "job": "Direktor",
+        "desc": "4 yil davomida ta’lim sohasida ishlayman, talabalarga xorijda o'qish ambitsiyalarini ro'yobga chiqarishda yordam beraman. Janubiy Koreyaning INKHA universitetida bakalavr va magistr darajalariga ega bo'lib, o'z rolimda kuchli xalqaro nuqtai nazar va akademik tajribani qo'llayman.",
+        "desc2": "RF Consulting’da talabalarga mos universitetlar va yo'nalishlarni tanlashda yordam beraman, shuningdek, ariza topshirish va viza jarayonlarida yo'l-yo'riq ko'rsataman. Ota-onalar bilan ham faol hamkorlik qilaman, ularning farzandlarining akademik sayohati davomida ishtirok etishi va qo'llab-quvvatlanishini ta’minlayman."
+      },
+      "card2": {
+        "name": "Aslonov Bahrom",
+        "job": "Maslahatchi",
+        "desc": "RF Consulting’da talabalar bilan birga ishlayman, ularga akademik sayohatlarida yo'l-yo'riq ko'rsataman va ularning ambitsiyalariga mos keladigan universitetlar va kurslarni tanlashda yordam beraman. Xalqaro ta’lim tizimlari haqidagi tushunchamdan foydalanib, ariza jarayonini silliq va samarali qilish uchun moslashtirilgan maslahatlar beraman. Shuningdek, ota-onalar bilan hamkorlik qilaman, ularning qaror qabul qilish jarayonida o'zlarini ishonchli va ishtirok etgan holda his qilishlarini ta’minlayman. Bundan tashqari, talabalarga ularning kuchli tomonlarini namoyon etuvchi va qabul qilinish imkoniyatlarini oshiradigan jozibali motivatsion xatlar va Maqsad Bayonotlari (SOP) tayyorlashda yordam beraman."
+      },
+      "card3": {
+        "name": "Iroda Khamidova",
+        "job": "Bosh direktor",
+        "desc": "RF Consulting’ning bosh direktori sifatida men talabalarni xorijdagi akademik sayohatlarining har bir bosqichida yo'l-yo'riq qilishga bag'ishlanganman. To'g'ri universitet va yo'nalish tanlashdan tortib, arizalarni to'ldirish va viza olishgacha, talabalar muvaffaqiyatga erishishi uchun zarur yordamni ta’minlayman.",
+        "desc2": "Ta’lim sohasida 4 yildan ortiq tajribaga ega bo'lib, Buyuk Britaniyaning Northeastern University London’da magistr darajasiga va ICEF’dan professional sertifikatga egaman, xalqaro ta’lim maslahati sohasida akademik tushuncha va isbotlangan tajribani olib kelaman. RF Consulting’da mening vazifam murakkab jarayonlarni soddalashtirish, talabalarni to'g'ri tanlovlar bilan quvvatlash va global imkoniyatlar eshiklarini ochishdir."
+      },
+      "card4": {
+        "name": "Texron",
+        "job": "IT Dasturchi",
+        "desc": "RF Consulting’da IT dasturchisi sifatida men raqamli tizimlarimizni boshqarish va saqlash uchun mas’ulman, bu esa silliq ishlashni ta’minlaydi. Shuningdek, talabalar bilan onlayn platformalarimiz orqali bevosita aloqada bo'lib, ularga kerak bo'lganda texnik yordam va qo'llab-quvvatlashni taqdim etaman.",
+        "desc2": "Texnik tajriba va talabalarga yo'naltirilgan yondashuvni birlashtirib, jamoamiz va biz xizmat ko'rsatadigan talabalarni qo'llab-quvvatlaydigan ishonchli va samarali tizim yarataman."
+      }
   },
   "citys": {
     "sectionTitle": "Countries",

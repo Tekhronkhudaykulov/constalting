@@ -207,7 +207,7 @@ export default function Footer() {
               </div>
 
               {/* Logo va bayroqlar */}
-              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
+              <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-end">
                 <img
                   src={footerimg}
                   className="md:w-16 md:h-16 w-12 h-12 object-contain"
