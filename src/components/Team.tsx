@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTelegram, FaLinkedin } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -89,36 +89,39 @@ export default function Team() {
       name: t("team.card1.name"),
       job: t("team.card1.job"),
       desc: t("team.card1.desc"),
+      desc2: t("team.card1.desc2"),
+      facebook: "#",
+      telegram: "https://t.me/+447511988672",
+      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195"
     },
     {
       img: colective2,
       name: t("team.card2.name"),
       job: t("team.card2.job"),
       desc: t("team.card2.desc"),
+      facebook: "#",
+      telegram: "#",
+      linkendin: "#"
     },
     {
       img: colective3,
       name: t("team.card3.name"),
       job: t("team.card3.job"),
       desc: t("team.card3.desc"),
+      desc2: t("team.card3.desc2"),
+      facebook: "#",
+      telegram: "https://t.me/+998996838844",
+      linkendin: "https://www.linkedin.com/in/iroda-khamidova-48280825a"
     },
     {
       img: colective4,
       name: t("team.card4.name"),
       job: t("team.card4.job"),
       desc: t("team.card4.desc"),
-    },
-    {
-      img: colective1,
-      name: t("team.card1.name"),
-      job: t("team.card1.job"),
-      desc: t("team.card1.desc"),
-    },
-    {
-      img: colective1,
-      name: t("team.card1.name"),
-      job: t("team.card1.job"),
-      desc: t("team.card1.desc"),
+      desc2: t("team.card4.desc2"),
+      facebook: "#",
+      telegram: "#",
+      linkendin: "#"
     },
   ];
 
@@ -134,22 +137,22 @@ export default function Team() {
       </div>
       <div className="flex justify-center items-center   overflow-hidden">
         <div className="w-full ">
-          <div ref={sliderRef} className="keen-slider">
+          <div ref={sliderRef} className="keen-slider ">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
                 className="keen-slider__slide rounded-lg shadow-lg overflow-hidden"
               >
-                <div className="flex flex-col h-full bg-gray-100 rounded-lg">
-                  <div className="w-full h-[250px] overflow-hidden ">
+                <div className="flex flex-col h-full bg-gray-100 rounded-lg  md:text-left text-center">
+                  <div className="h-[250px]">
                     <LazyLoadImage
                       src={member.img}
                       alt={member.name}
                       effect="blur"
-                      className="w-full h-[250px] object-cover"
+                      className="h-[250px] object-cover "
                     />
                   </div>
-                  <div className="p-4 flex flex-col justify-between flex-1">
+                  <div className="p-4 flex flex-col gap-2 flex-1">
                     <div>
                       <h1 className="text-lg font-bold text-[#233876] font-inter">
                         {member.name}
@@ -159,13 +162,22 @@ export default function Team() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-[#6B7280] line-clamp-3">
+                      <p className="text-sm text-[#6B7280]">
                         {member.desc}
+                        <br />
+                        <br />
+                        {member.desc2}
                       </p>
-                      <div className="flex gap-4 mt-3">
-                        <FaFacebookF size={20} className="text-[#6B7280]" />
-                        <FaTwitter size={20} className="text-[#6B7280]" />
-                        <FaGithub size={20} className="text-[#6B7280]" />
+                      <div className="flex gap-4 md:justify-normal mt-4 justify-center">
+                        <a target="_blank" href={member.facebook}>
+                          <FaFacebookF size={20} className="text-[#6B7280]" />
+                        </a>
+                        <a target="_blank" href={member.telegram}>
+                        <FaTelegram size={20} className="text-[#6B7280]" />
+                        </a>
+                        <a target="_blank" href={member.linkendin}>
+                        <FaLinkedin size={20} className="text-[#6B7280]" />
+                        </a>
                       </div>
                     </div>
                   </div>

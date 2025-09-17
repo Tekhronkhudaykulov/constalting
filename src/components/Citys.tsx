@@ -20,37 +20,43 @@ export default function Citys() {
       img: davlat1,
       aos: "fade-right",
       title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      desc: "citys.card1.desc1",
+      desc2: "citys.card1.desc2",
     },
     {
       img: davlat2,
       aos: "fade-up",
-      title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      title: "citys.card2.title",
+      desc: "citys.card2.desc1",
+      desc2: "citys.card2.desc2",
     },
     {
       img: davlat3,
       aos: "fade-left",
-      title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      title: "citys.card3.title",
+      desc: "citys.card3.desc1",
+      desc2: "citys.card3.desc2",
     },
     {
       img: davlat4,
       aos: "flip-right",
-      title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      title: "citys.card4.title",
+      desc: "citys.card4.desc1",
+      desc2: "citys.card4.desc2",
     },
     {
       img: davlat5,
       aos: "flip-left",
-      title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      title: "citys.card5.title",
+      desc: "citys.card5.desc1",
+      desc2: "citys.card5.desc2",
     },
     {
       img: davlat6,
       aos: "zoom-in",
-      title: "citys.card1.title",
-      desc: "citys.card1.desc",
+      title: "citys.card6.title",
+      desc: "citys.card6.desc1",
+      desc2: "citys.card6.desc2",
     },
   ];
 
@@ -91,21 +97,24 @@ export default function Citys() {
                 className="relative group rounded-lg overflow-hidden shadow-2xl"
                 data-aos={card.aos}
               >
-                <div className="md:h-[320px]  max-[768px]:h-[250px]">
+                <div className="md:h-[420px]  max-[768px]:h-[350px]">
                   <LazyLoadImage
                     src={card.img}
                     alt={`city-${i}`}
                     effect="blur"
-                    className="w-full h-[325px] object-cover transform transition-transform duration-[2000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-102"
+                    className="w-full h-[425px] object-fill transform transition-transform duration-[2000ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-102"
                   />
                 </div>
 
                 <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-around opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h1 className="text-white font-popins text-[30px] min-[768px]:text-[18px] font-bold">
+                  <h1 className="text-white font-popins md:text-[20px] text-[16px]  font-bold">
                     {t(card.title)}
                   </h1>
-                  <p className="text-white text-left px-7 text-[15px]/5 min-[768px]:text-[12px] line-clamp-6 font-roboto">
+                  <p className="text-white text-left px-7 md:text-[14px]/[18px] text-[12px] font-roboto">
                     {t(card.desc)}
+                    <br />
+                    <br />
+                    {t(card.desc2)}
                   </p>
                 </div>
               </div>

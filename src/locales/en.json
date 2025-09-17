@@ -69,24 +69,27 @@
     "sectionTitle": "OUR TEAM",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
     "card1": {
-      "name": "Asadov Sherzod",
+      "name": "Rakhmonjon Khamidov",
       "job": "Director",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "desc": "Within 4 years, I have been working in the education sector, helping students pursue their ambitions of studying overseas. Holding both a Bachelor’s and a Master’s degree from INKHA University in South Korea, I bring a strong international perspective and academic expertise to my role.",
+      "desc2": "At RF Consulting, I assist students in selecting suitable universities and majors, while also providing guidance on applications and visa procedures. I actively collaborate with parents as well, ensuring they are engaged and supported throughout their child’s academic journey."
     },
     "card2": {
       "name": "Salomov Adiz",
-      "job": "Assistant Director",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "job": "Consultant",
+      "desc": "At RF Consulting, I work alongside students to help them navigate their academic journey and choose the universities and courses best suited to their ambitions. By drawing on my understanding of international education systems, I provide tailored guidance that makes the application process smoother and more effective. I also collaborate with parents to ensure they feel confident and engaged throughout the decision-making process. Beyond this, I support students in drafting compelling motivation letters and Statements of Purpose (SOPs) that showcase their strengths and enhance their chances of admission."
     },
     "card3": {
-      "name": "Shahzoda",
-      "job": "Consultant",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "name": "Iroda Khamidova",
+      "job": "CEO",
+      "desc": "As CEO of RF Consulting, I am dedicated to guiding students through every step of their academic journey abroad. From selecting the right university and major to completing applications and securing visas, I ensure students receive the support they need to succeed.",
+      "desc2": "With more than 4 years of experience in the education field, a Master’s degree from Northeastern University London (UK), and professional certification from ICEF, I bring both academic insight and proven expertise to the field of international education consulting. At RF Consulting, my mission is to simplify complex processes, empower students with the right choices, and open doors to global opportunities."
     },
     "card4": {
-      "name": "Lola",
-      "job": "Deputy Director",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "name": "Texron",
+      "job": "IT Programmer",
+      "desc": "As an IT Programmer at RF Consulting, I am responsible for managing and maintaining our digital systems to ensure smooth operations. I also interact directly with students through our online platforms, providing technical assistance and support whenever needed.",
+      "desc2": "By combining technical expertise with a student-focused approach, I help create a reliable and efficient system that supports both our team and the students we serve."
     }
   },
   "citys": {
@@ -94,10 +97,36 @@
     "title1": "Popular Countries",
     "title2": "For International Education",
     "desc": "Our expert team provides study abroad consultation for ambitious students. Our certified education consultants are trusted specialists in immigration services who will help you achieve positive results in your case. We provide study abroad and immigration services worldwide.",
-    "card1": {
-      "title": "USA",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-    }
+      "card1": {
+        "title": "AQSh",
+        "desc1": "Qo'shma Shtatlar dunyodagi eng yaxshi universitetlarga ega bo'lib, talabalarga global miqyosda tan olingan ajoyib ta’lim taklif qiladi. Har bir sohada minglab dasturlar bilan siz Harvard, MIT, Stanford va boshqa ko'plab nufuzli muassasalardan tanlashingiz mumkin.",
+        "desc2": "Talabalar, shuningdek, ko'plab stipendiyalar va moliyaviy yordam imkoniyatlaridan foydalanishlari mumkin, bu esa AQShda ta’lim olishni yanada arzon qiladi. Amerikada o'qish nafaqat akademik mukammallikni ta’minlaydi, balki tadqiqotlar, amaliyotlar va xalqaro karyera qurish imkoniyatlarini ham beradi."
+      },
+      "card2": {
+        "title": "Kanada",
+        "desc1": "Kanada xalqaro talabalar uchun eng mehmondo'st mamlakatlardan biri bo'lib, University of Toronto, McGill, UBC va boshqa ko'plab global tan olingan universitetlarda yuqori sifatli ta’lim taklif qiladi.",
+        "desc2": "Keng ko'lamli stipendiyalar va hukumat qo'llab-quvvatlash dasturlari tufayli Kanadada o'qish ham arzon, ham foydali. Talabalar, shuningdek, xilma-xil madaniy tajriba, xavfsiz yashash muhiti va o'qishni tugatgandan so'ng ish imkoniyatlaridan foydalanishadi, bu esa doimiy rezidentlikka olib kelishi mumkin."
+      },
+      "card3": {
+        "title": "Buyuk Britaniya",
+        "desc1": "Buyuk Britaniya dunyodagi eng nufuzli universitetlarga ega, jumladan Oxford, Cambridge, Imperial College London va boshqa ko'plab muassasalar. Talabalar global miqyosda tan olingan va ish beruvchilar tomonidan qadrlanadigan yuqori sifatli dasturlardan tanlashlari mumkin.",
+        "desc2": "Chevening Scholarship, Commonwealth Scholarship va universitetlar tomonidan taqdim etiladigan maxsus mukofotlar kabi ajoyib stipendiya imkoniyatlari tufayli Buyuk Britaniyada o'qish ham arzon, ham foydali bo'lishi mumkin. Buyuk Britaniya, shuningdek, boy madaniy tajriba va o'qishdan keyingi ish imkoniyatlari orqali xalqaro karyera qurish imkonini beradi."
+      },
+      "card4": {
+        "title": "Avstraliya",
+        "desc1": "Avstraliya xalqaro talabalar uchun yetakchi mamlakat bo'lib, University of Melbourne, ANU va University of Sydney kabi jahon darajasidagi universitetlari bilan mashhur. Keng dasturlar tanlovi, ilg'or tadqiqot imkoniyatlari va jonli multikultural muhit talabalarga global hurmatga sazovor ta’lim beradi.",
+        "desc2": "Australia Awards va universitetlar tomonidan taqdim etiladigan maxsus moliyalashtirish kabi saxiy stipendiyalar va grantlar o'qishni yanada arzon qiladi. Avstraliya, shuningdek, o'qishni tugatgandan so'ng kuchli ish imkoniyatlarini taklif qiladi, bu xalqaro karyeralar va doimiy rezidentlikka yo'l ochadi."
+      },
+      "card5": {
+        "title": "Xitoy",
+        "desc1": "Xitoy xalqaro talabalar uchun yetakchi mamlakatga aylanmoqda, Tsinghua, Peking va Fudan kabi nufuzli universitetlar jahon darajasidagi ta’lim taklif qiladi. O'qish haqi va yashash xarajatlari odatda ko'plab G'arb mamlakatlariga nisbatan ancha arzon, universitetlar esa xalqaro talabalar uchun turli stipendiyalar va moliyalashtirish imkoniyatlarini taqdim etadi.",
+        "desc2": "Xitoyda o'qish qadimiy madaniyat va zamonaviy innovatsiyalarning noyob uyg'unligini his qilish, qimmatli til ko'nikmalarini olish va dunyodagi eng tez rivojlanayotgan iqtisodlardan birida karyera imkoniyatlarini qurish imkonini beradi."
+      },
+      "card6": {
+        "title": "Italiya",
+        "desc1": "Italiya talabalarga dunyodagi eng qadimgi va nufuzli universitetlarda o'qish imkoniyatini beradi, masalan, University of Bologna, Sapienza University of Rome va Politecnico di Milano. Dasturlar ingliz va italyan tillarida mavjud bo'lib, keng fanlar doirasini qamrab oladi.",
+        "desc2": "Xalqaro talabalar saxiy stipendiyalar, o'qish haqidagi chegirmalar va mintaqaviy grantlardan foydalanishlari mumkin, bu esa Italiyada oliy ta’limni ancha arzon qiladi. Akademik mukammallikdan tashqari, talabalar Italiyaning boy madaniyati, tarixi va turmush tarzi bilan Yevropaning eng ilhomlantiruvchi mamlakatlaridan birida zavqlanishadi."
+      }
   },
   "partners": {
     "sectionTitle": "Our Partners"
