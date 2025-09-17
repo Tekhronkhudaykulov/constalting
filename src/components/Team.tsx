@@ -87,7 +87,7 @@ export default function Team() {
     {
       img: colective3,
       name: t("team.card3.name"),
-      job: t("team.card3.job"),
+      job: t("team.card1.job"),
       desc: t("team.card3.desc"),
       desc2: t("team.card3.desc2"),
       facebook: "#",
@@ -97,7 +97,7 @@ export default function Team() {
     {
       img: colective1,
       name: t("team.card1.name"),
-      job: t("team.card1.job"),
+      job: t("team.card3.job"),
       desc: t("team.card1.desc"),
       desc2: t("team.card1.desc2"),
       facebook: "#",

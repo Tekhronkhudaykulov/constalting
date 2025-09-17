@@ -69,24 +69,27 @@
     "sectionTitle": "BIZNING JAMOA",
     "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
     "card1": {
-      "name": "Asadov Sherzod",
+      "name": "Rakhmonjon Khamidov",
       "job": "Direktor",
-      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "desc": "4 yil davomida ta’lim sohasida ishlayman, talabalarga xorijda o'qish ambitsiyalarini ro'yobga chiqarishda yordam beraman. Janubiy Koreyaning INKHA universitetida bakalavr va magistr darajalariga ega bo'lib, o'z rolimda kuchli xalqaro nuqtai nazar va akademik tajribani qo'llayman.",
+      "desc2": "RF Consulting’da talabalarga mos universitetlar va yo'nalishlarni tanlashda yordam beraman, shuningdek, ariza topshirish va viza jarayonlarida yo'l-yo'riq ko'rsataman. Ota-onalar bilan ham faol hamkorlik qilaman, ularning farzandlarining akademik sayohati davomida ishtirok etishi va qo'llab-quvvatlanishini ta’minlayman."
     },
     "card2": {
       "name": "Aslonov Bahrom",
-      "job": "Konsultant",
-      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "job": "Consultant",
+      "desc": "RF Consulting’da talabalar bilan birga ishlayman, ularga akademik sayohatlarida yo'l-yo'riq ko'rsataman va ularning ambitsiyalariga mos keladigan universitetlar va kurslarni tanlashda yordam beraman. Xalqaro ta’lim tizimlari haqidagi tushunchamdan foydalanib, ariza jarayonini silliq va samarali qilish uchun moslashtirilgan maslahatlar beraman. Shuningdek, ota-onalar bilan hamkorlik qilaman, ularning qaror qabul qilish jarayonida o'zlarini ishonchli va ishtirok etgan holda his qilishlarini ta’minlayman. Bundan tashqari, talabalarga ularning kuchli tomonlarini namoyon etuvchi va qabul qilinish imkoniyatlarini oshiradigan jozibali motivatsion xatlar va Maqsad Bayonotlari (SOP) tayyorlashda yordam beraman."
     },
     "card3": {
-      "name": "Shahzoda ",
-      "job": "Yordamchi raxbar",
-      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "name": "Iroda Khamidova",
+      "job": "Bosh ijrochi direktor",
+      "desc": "RF Consulting’ning bosh ijrochi direktori sifatida men talabalarni xorijdagi akademik sayohatlarining har bir bosqichida yo'l-yo'riq qilishga bag'ishlanganman. To'g'ri universitet va yo'nalish tanlashdan tortib, arizalarni to'ldirish va viza olishgacha, talabalar muvaffaqiyatga erishishi uchun zarur yordamni ta’minlayman.",
+      "desc2": "Ta’lim sohasida 4 yildan ortiq tajribaga ega bo'lib, Buyuk Britaniyaning Northeastern University London’da magistr darajasiga va ICEF’dan professional sertifikatga egaman, xalqaro ta’lim maslahati sohasida akademik tushuncha va isbotlangan tajribani olib kelaman. RF Consulting’da mening vazifam murakkab jarayonlarni soddalashtirish, talabalarni to'g'ri tanlovlar bilan quvvatlash va global imkoniyatlar eshiklarini ochishdir."
     },
     "card4": {
-      "name": "Lola",
-      "job": "Zam direktor",
-      "desc": "Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "name": "Texron",
+      "job": "IT Dasturchi",
+      "desc": "RF Consulting’da IT dasturchisi sifatida men raqamli tizimlarimizni boshqarish va saqlash uchun mas’ulman, bu esa silliq ishlashni ta’minlaydi. Shuningdek, talabalar bilan onlayn platformalarimiz orqali bevosita aloqada bo'lib, ularga kerak bo'lganda texnik yordam va qo'llab-quvvatlashni taqdim etaman.",
+      "desc2": "Texnik tajriba va talabalarga yo'naltirilgan yondashuvni birlashtirib, jamoamiz va biz xizmat ko'rsatadigan talabalarni qo'llab-quvvatlaydigan ishonchli va samarali tizim yarataman."
     }
   },
   "citys": {
@@ -147,7 +150,7 @@
       "title": "Aloqa",
       "city": "Toshkent",
       "phone_label": "Telefon raqamlari:",
-      "phone": "+998 91 123 45 67",
+      "phone": "+998 (99) 683-88-44",
       "address_label": "Manzilimiz:",
       "address": "Yunusobod tumani, 17-mavze, Toshkent, 100206, O'zbekiston"
     },

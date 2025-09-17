@@ -49,9 +49,9 @@ export default function Footer() {
                 </p>
                 <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.phone_label")}
-                  <span className="font-normal ml-1">
+                  <a href="tel:+998(99)683-88-44" className="font-normal ml-1">
                     {t("footer.contact.phone")}
-                  </span>
+                  </a>
                 </p>
                 <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.address_label")}
