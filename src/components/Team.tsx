@@ -162,7 +162,7 @@ export default function Team() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-[#6B7280]">
+                      <p className="text-sm text-[#6B7280] line-clamp-5">
                         {member.desc}
                         <br />
                         <br />

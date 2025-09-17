@@ -98,34 +98,34 @@
     "title2": "For International Education",
     "desc": "Our expert team provides study abroad consultation for ambitious students. Our certified education consultants are trusted specialists in immigration services who will help you achieve positive results in your case. We provide study abroad and immigration services worldwide.",
       "card1": {
-        "title": "AQSh",
-        "desc1": "Qo'shma Shtatlar dunyodagi eng yaxshi universitetlarga ega bo'lib, talabalarga global miqyosda tan olingan ajoyib ta’lim taklif qiladi. Har bir sohada minglab dasturlar bilan siz Harvard, MIT, Stanford va boshqa ko'plab nufuzli muassasalardan tanlashingiz mumkin.",
-        "desc2": "Talabalar, shuningdek, ko'plab stipendiyalar va moliyaviy yordam imkoniyatlaridan foydalanishlari mumkin, bu esa AQShda ta’lim olishni yanada arzon qiladi. Amerikada o'qish nafaqat akademik mukammallikni ta’minlaydi, balki tadqiqotlar, amaliyotlar va xalqaro karyera qurish imkoniyatlarini ham beradi."
+        "title": "USA",
+        "desc1": "The United States is home to the world’s top universities and offers students an outstanding education recognized globally. With thousands of programs across every field, you can choose from prestigious institutions such as Harvard, MIT, Stanford, and many more.",
+        "desc2": "Students also have access to numerous scholarships and financial aid options, making education in the U.S. more affordable. Studying in America provides not only academic excellence but also opportunities for research, internships, and building an international career."
       },
       "card2": {
-        "title": "Kanada",
-        "desc1": "Kanada xalqaro talabalar uchun eng mehmondo'st mamlakatlardan biri bo'lib, University of Toronto, McGill, UBC va boshqa ko'plab global tan olingan universitetlarda yuqori sifatli ta’lim taklif qiladi.",
-        "desc2": "Keng ko'lamli stipendiyalar va hukumat qo'llab-quvvatlash dasturlari tufayli Kanadada o'qish ham arzon, ham foydali. Talabalar, shuningdek, xilma-xil madaniy tajriba, xavfsiz yashash muhiti va o'qishni tugatgandan so'ng ish imkoniyatlaridan foydalanishadi, bu esa doimiy rezidentlikka olib kelishi mumkin."
+        "title": "Canada",
+        "desc1": "Canada is one of the most welcoming destinations for international students, offering high-quality education at globally recognized universities such as the University of Toronto, McGill, UBC, and many more.",
+        "desc2": "With a wide range of scholarships and government support programs, studying in Canada is both affordable and rewarding. Students also benefit from diverse cultural experiences, safe living environments, and post-graduation work opportunities that can lead to permanent residency."
       },
       "card3": {
-        "title": "Buyuk Britaniya",
-        "desc1": "Buyuk Britaniya dunyodagi eng nufuzli universitetlarga ega, jumladan Oxford, Cambridge, Imperial College London va boshqa ko'plab muassasalar. Talabalar global miqyosda tan olingan va ish beruvchilar tomonidan qadrlanadigan yuqori sifatli dasturlardan tanlashlari mumkin.",
-        "desc2": "Chevening Scholarship, Commonwealth Scholarship va universitetlar tomonidan taqdim etiladigan maxsus mukofotlar kabi ajoyib stipendiya imkoniyatlari tufayli Buyuk Britaniyada o'qish ham arzon, ham foydali bo'lishi mumkin. Buyuk Britaniya, shuningdek, boy madaniy tajriba va o'qishdan keyingi ish imkoniyatlari orqali xalqaro karyera qurish imkonini beradi."
+        "title": "United Kingdom",
+        "desc1": "The UK is home to some of the world’s most prestigious universities, including Oxford, Cambridge, Imperial College London, and many more. Students can choose from a wide range of high-quality degree programs that are globally recognized and valued by employers.",
+        "desc2": "With excellent scholarship opportunities such as the Chevening Scholarship, Commonwealth Scholarship, and university-specific awards, studying in the UK can be both affordable and rewarding. The UK also offers a rich cultural experience and the chance to build an international career through post-study work opportunities."
       },
       "card4": {
-        "title": "Avstraliya",
-        "desc1": "Avstraliya xalqaro talabalar uchun yetakchi mamlakat bo'lib, University of Melbourne, ANU va University of Sydney kabi jahon darajasidagi universitetlari bilan mashhur. Keng dasturlar tanlovi, ilg'or tadqiqot imkoniyatlari va jonli multikultural muhit talabalarga global hurmatga sazovor ta’lim beradi.",
-        "desc2": "Australia Awards va universitetlar tomonidan taqdim etiladigan maxsus moliyalashtirish kabi saxiy stipendiyalar va grantlar o'qishni yanada arzon qiladi. Avstraliya, shuningdek, o'qishni tugatgandan so'ng kuchli ish imkoniyatlarini taklif qiladi, bu xalqaro karyeralar va doimiy rezidentlikka yo'l ochadi."
+        "title": "Australia",
+        "desc1": "Australia is a leading destination for international students, known for world-class universities such as the University of Melbourne, ANU, and the University of Sydney. With a wide range of programs, cutting-edge research opportunities, and a vibrant multicultural environment, students receive an education that is globally respected.",
+        "desc2": "Generous scholarships and grants, including the Australia Awards and university-specific funding, help make studies more affordable. Australia also offers strong post-graduation work opportunities, opening pathways to international careers and permanent residency."
       },
       "card5": {
-        "title": "Xitoy",
-        "desc1": "Xitoy xalqaro talabalar uchun yetakchi mamlakatga aylanmoqda, Tsinghua, Peking va Fudan kabi nufuzli universitetlar jahon darajasidagi ta’lim taklif qiladi. O'qish haqi va yashash xarajatlari odatda ko'plab G'arb mamlakatlariga nisbatan ancha arzon, universitetlar esa xalqaro talabalar uchun turli stipendiyalar va moliyalashtirish imkoniyatlarini taqdim etadi.",
-        "desc2": "Xitoyda o'qish qadimiy madaniyat va zamonaviy innovatsiyalarning noyob uyg'unligini his qilish, qimmatli til ko'nikmalarini olish va dunyodagi eng tez rivojlanayotgan iqtisodlardan birida karyera imkoniyatlarini qurish imkonini beradi."
+        "title": "China",
+        "desc1": "China is becoming a top destination for international students, with prestigious universities such as Tsinghua, Peking, and Fudan offering world-class education. Tuition fees and living costs are generally more affordable compared to many Western countries, while universities provide a variety of scholarships and funding options directly for international students.",
+        "desc2": "Studying in China allows you to experience a unique blend of ancient culture and modern innovation, gain valuable language skills, and build career opportunities in one of the world’s fastest-growing economies."
       },
       "card6": {
-        "title": "Italiya",
-        "desc1": "Italiya talabalarga dunyodagi eng qadimgi va nufuzli universitetlarda o'qish imkoniyatini beradi, masalan, University of Bologna, Sapienza University of Rome va Politecnico di Milano. Dasturlar ingliz va italyan tillarida mavjud bo'lib, keng fanlar doirasini qamrab oladi.",
-        "desc2": "Xalqaro talabalar saxiy stipendiyalar, o'qish haqidagi chegirmalar va mintaqaviy grantlardan foydalanishlari mumkin, bu esa Italiyada oliy ta’limni ancha arzon qiladi. Akademik mukammallikdan tashqari, talabalar Italiyaning boy madaniyati, tarixi va turmush tarzi bilan Yevropaning eng ilhomlantiruvchi mamlakatlaridan birida zavqlanishadi."
+        "title": "Italy",
+        "desc1": "Italy offers students the chance to study at some of the oldest and most prestigious universities in the world, such as the University of Bologna, Sapienza University of Rome, and Politecnico di Milano. Programs are available in English and Italian, covering a wide range of disciplines.",
+        "desc2": "International students can benefit from generous scholarships, tuition fee reductions, and regional grants, making higher education in Italy highly affordable. Alongside academic excellence, students enjoy Italy’s rich culture, history, and lifestyle in one of Europe’s most inspiring destinations."
       }
   },
   "partners": {
@@ -152,7 +152,7 @@
       "phone_label": "Phone Numbers:",
       "phone": "+998 91 123 45 67",
       "address_label": "Our Address:",
-      "address": "13 Rustaveli Ave, Block 1, Chilanzar district, Tashkent, Uzbekistan, 100025"
+      "address": "Yunusabad District, 17th Mavze, Tashkent, 100206, Uzbekistan"
     },
 
     "links": {

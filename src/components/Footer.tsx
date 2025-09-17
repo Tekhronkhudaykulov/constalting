@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { candaIcon, footerBg, koreaIcon, useIcon, yevroIcon } from "../assets";
 import { Link } from "react-scroll";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { footerimg } from "../assets";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -48,15 +49,15 @@ export default function Footer() {
                 </p>
                 <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.phone_label")}
-                  <span className="font-normal">
+                  <span className="font-normal ml-1">
                     {t("footer.contact.phone")}
                   </span>
                 </p>
                 <p className="font-georgia text-[14px] font-bold mt-3 text-center sm:text-left">
                   {t("footer.contact.address_label")}
-                  <span className="font-normal">
+                  <a target="_blank" href="" className="font-normal ml-1">
                     {t("footer.contact.address")}
-                  </span>
+                  </a>
                 </p>
                 <div className="flex gap-3 sm:mt-15 mt-3">
                   <a
@@ -207,12 +208,11 @@ export default function Footer() {
 
               {/* Logo va bayroqlar */}
               <div className="flex flex-col justify-center items-center sm:justify-normal sm:items-start">
-                <h3 className="text-lg font-semibold mb-4">
-                  {t("footer.logo_block.title")}
-                </h3>
-                <p className="text-sm text-gray-300 text-center sm:text-left">
-                  {t("footer.logo_block.desc")}
-                </p>
+                <img
+                  src={footerimg}
+                  className="md:w-16 md:h-16 w-12 h-12 object-contain"
+                  alt=""
+                />
                 <div className="grid grid-cols-4  items-start justify-start gap-4 mt-4 mb-8">
                   <div className="text-center flex items-center justify-center flex-col gap-3">
                     <img src={candaIcon} alt="Canada" />

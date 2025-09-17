@@ -30,6 +30,8 @@ import useIcon from "./flag02.svg";
 import candaIcon from "./flag03.svg";
 import koreaIcon from "./Frame 14.svg";
 import yevroIcon from "./Frame 16.svg";
+import footerimg from './footerimg.png'
+import headerimg from './headerimg.png'
 
 export {
   About1,
@@ -64,4 +66,6 @@ export {
   candaIcon,
   koreaIcon,
   yevroIcon,
+  headerimg,
+  footerimg
 };

@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import "aos/dist/aos.css";
 import { AnimatePresence, motion } from "framer-motion";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { headerimg } from "../assets";
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
@@ -53,9 +54,7 @@ export default function Hero() {
         <div className="h-[10vh] bg-white flex">
           <div className="container  gap-2 flex items-center justify-between  ">
             <div>
-              <p className="text-black" data-aos="fade-right">
-                logo
-              </p>
+              <img src={headerimg} className="md:w-16 md:h-16 w-12 h-12 object-contain" alt="" />
             </div>
 
             {/* Desktop menu */}
