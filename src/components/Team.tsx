@@ -16,7 +16,7 @@ export default function Team() {
       desc2: t("team.card3.desc2"),
       facebook: "#",
       telegram: "https://t.me/+447511988672",
-      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195",
+      linkendin: "https://www.linkedin.com/in/rakhmonjon-khamidov-312974195/",
     },
     {
       img: colective3,
@@ -36,7 +36,7 @@ export default function Team() {
       desc2: t("team.card4.desc2"),
       facebook: "#",
       telegram: "#",
-      linkendin: "#",
+      linkendin: "https://www.linkedin.com/in/texron-xudaykulov-662637217/",
     },
     {
       img: colective2,
