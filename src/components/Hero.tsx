@@ -32,13 +32,17 @@ export default function Hero() {
                 <span className="text-[#f15c36] ">
                   {t("header.emailLabel")}
                 </span>
+                <a href="mailto:info@rfconsultingsupport.com" className="font-normal ml-0.5">
                 info@rfconsultingsupport.com
+                </a>
               </p>
               <p className="flex items-center gap-1 font-georgia max-[1280px]:text-[12px]">
                 <span className="text-[#f15c36] ">
                   {t("header.phoneLabel")}
                 </span>
-                {t("header.phoneNumber")}
+                <a href="tel:+998(99)683-88-44" className="font-normal ml-0.5">
+                  {t("footer.contact.phone")}
+                </a>
               </p>
             </div>
             <button
@@ -54,7 +58,11 @@ export default function Hero() {
         <div className="h-[10vh] bg-white flex">
           <div className="container  gap-2 flex items-center justify-between  ">
             <div>
-              <img src={headerimg} className="md:w-16 md:h-16 w-12 h-12 object-contain" alt="" />
+              <img
+                src={headerimg}
+                className="md:w-16 md:h-16 w-12 h-12 object-contain"
+                alt=""
+              />
             </div>
 
             {/* Desktop menu */}

@@ -1,108 +1,32 @@
-import * as React from "react";
-import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { FaFacebookF, FaTelegram, FaLinkedin } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-
-function useAutoPlay(instanceRef: any, interval = 2000) {
-  React.useEffect(() => {
-    const slider = instanceRef.current; // Slider instansiyasini olish
-    if (!slider) return; // Agar slider mavjud bo‘lmasa, hech narsa qilmaslik
-
-    // let timeout: NodeJS.Timeout;
-    let timeout: number;
-    let mouseOver = false; // Sichqoncha slider ustida ekanligini kuzatish
-
-    // Keyingi slaydga o‘tish funksiyasi
-    const nextTimeout = () => {
-      if (mouseOver) return; // Sichqoncha ustida bo‘lsa, hech narsa qilmaslik
-      clearTimeout(timeout); // Oldingi timeout'ni tozalash
-      timeout = setTimeout(() => {
-        slider.next(); // Keyingi slaydga o‘tish
-        nextTimeout(); // Qayta chaqirish (rekursiv)
-      }, interval);
-    };
-
-    // Timeout'ni tozalash
-    const clearNextTimeout = () => {
-      clearTimeout(timeout);
-    };
-
-    // Sichqoncha hodisalari
-    const handleMouseOver = () => {
-      mouseOver = true;
-      clearNextTimeout();
-    };
-
-    const handleMouseOut = () => {
-      mouseOver = false;
-      nextTimeout();
-    };
-
-    // Sichqoncha hodisalarini slider konteyneriga bog‘lash
-    slider.container.addEventListener("mouseover", handleMouseOver);
-    slider.container.addEventListener("mouseout", handleMouseOut);
-
-    // Slider hodisalari
-    slider.on("dragStarted", clearNextTimeout); // Drag boshlanganda to‘xtatish
-    slider.on("animationEnded", nextTimeout); // Animatsiya tugaganda qayta boshlash
-    slider.on("updated", nextTimeout); // Slider yangilanganda qayta boshlash
-
-    // Sahifa yuklanganda darhol aylanishni boshlash
-    nextTimeout();
-
-    // useEffect tozalash funksiyasi
-    return () => {
-      clearTimeout(timeout);
-      slider.container.removeEventListener("mouseover", handleMouseOver);
-      slider.container.removeEventListener("mouseout", handleMouseOut);
-    };
-  }, [instanceRef, interval]); // instanceRef yoki interval o‘zgarsa qayta ishga tushadi
-}
-
 import { useTranslation } from "react-i18next";
 import { colective1, colective2, colective3, colective4 } from "../assets";
 
 export default function Team() {
-  const [sliderRef, instanceRef] = useKeenSlider({
-    loop: true,
-    slides: {
-      perView: 1, // Kichik ekranlar uchun default
-      spacing: 15,
-    },
-    breakpoints: {
-      "(min-width: 640px)": {
-        slides: { perView: 2, spacing: 15 }, // Kichik ekranlar (sm)
-      },
-      "(min-width: 1024px)": {
-        slides: { perView: 4, spacing: 15 }, // Katta ekranlar (lg), bo‘shliqsiz
-      },
-    },
-  });
-
-  useAutoPlay(instanceRef, 2000);
   const { t } = useTranslation();
   const teamMembers = [
-    {
-      img: colective3,
-      name: t("team.card3.name"),
-      job: t("team.card1.job"),
-      desc: t("team.card3.desc"),
-      desc2: t("team.card3.desc2"),
-      facebook: "#",
-      telegram: "https://t.me/+998996838844",
-      linkendin: "https://www.linkedin.com/in/iroda-khamidova-48280825a"
-    },
     {
       img: colective1,
       name: t("team.card1.name"),
       job: t("team.card3.job"),
+      desc: t("team.card3.desc"),
+      desc2: t("team.card3.desc2"),
+      facebook: "#",
+      telegram: "https://t.me/+447511988672",
+      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195",
+    },
+    {
+      img: colective3,
+      name: t("team.card3.name"),
+      job: t("team.card1.job"),
       desc: t("team.card1.desc"),
       desc2: t("team.card1.desc2"),
       facebook: "#",
-      telegram: "https://t.me/+447511988672",
-      linkendin: "www.linkedin.com/in/rakhmonjon-khamidov-312974195"
+      telegram: "https://t.me/+998996838844",
+      linkendin: "https://www.linkedin.com/in/iroda-khamidova-48280825a",
     },
     {
       img: colective4,
@@ -112,7 +36,7 @@ export default function Team() {
       desc2: t("team.card4.desc2"),
       facebook: "#",
       telegram: "#",
-      linkendin: "#"
+      linkendin: "#",
     },
     {
       img: colective2,
@@ -121,7 +45,7 @@ export default function Team() {
       desc: t("team.card2.desc"),
       facebook: "#",
       telegram: "#",
-      linkendin: "#"
+      linkendin: "#",
     },
   ];
 
@@ -137,11 +61,11 @@ export default function Team() {
       </div>
       <div className="flex justify-center items-center   overflow-hidden">
         <div className="w-full ">
-          <div ref={sliderRef} className="keen-slider ">
+          <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="keen-slider__slide rounded-lg shadow-lg overflow-hidden"
+                className="rounded-lg shadow-lg overflow-hidden"
               >
                 <div className="flex flex-col h-full bg-gray-100 rounded-lg  md:text-left text-center">
                   <div className="h-[250px]">
@@ -162,7 +86,7 @@ export default function Team() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-sm text-[#6B7280] line-clamp-5">
+                      <p className="text-sm text-[#6B7280] line-clamp-6 md:line-clamp-5">
                         {member.desc}
                         <br />
                         <br />
@@ -173,10 +97,10 @@ export default function Team() {
                           <FaFacebookF size={20} className="text-[#6B7280]" />
                         </a>
                         <a target="_blank" href={member.telegram}>
-                        <FaTelegram size={20} className="text-[#6B7280]" />
+                          <FaTelegram size={20} className="text-[#6B7280]" />
                         </a>
                         <a target="_blank" href={member.linkendin}>
-                        <FaLinkedin size={20} className="text-[#6B7280]" />
+                          <FaLinkedin size={20} className="text-[#6B7280]" />
                         </a>
                       </div>
                     </div>
