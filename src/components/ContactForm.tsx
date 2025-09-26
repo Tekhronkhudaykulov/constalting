@@ -52,12 +52,9 @@ export default function ContactForm() {
     }));
   };
 
-  const [status, setStatus] = useState("");
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.fullName || !formData.phoneNumber || !formData.textArea) {
-      setStatus("All fields are required!");
       return;
     }
 
