@@ -78,14 +78,13 @@ export default function ContactForm() {
       );
 
       if (response.ok) {
-        setStatus("Message sent successfully!");
         setFormData({ fullName: "", phoneNumber: "+998", textArea: "" });
       } else {
         const errorData = await response.json();
-        setStatus(`Failed to send message: ${errorData.description}`);
+        console.error("Error sending message:", errorData);
       }
     } catch (error) {
-      setStatus("Error sending message. Please try again.");
+      console.error("Error sending message:", error);
     }
   };
 
